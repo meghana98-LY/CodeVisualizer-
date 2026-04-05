@@ -1,0 +1,276 @@
+/* ================================================
+   Four-Year Guide Styles (guide.css)
+   ================================================ */
+
+/* Grid layout */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.year-grid {
+  margin-bottom: 20px;
+}
+
+/* Year Tiles */
+.year-tile {
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+  cursor: pointer;
+  transition: 0.2s ease;
+  background: rgba(108, 156, 255, 0.15);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.year-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Active Tile */
+.year-tile.active {
+  outline: 2px solid var(--brand-primary);
+  background: linear-gradient(
+    135deg,
+    rgba(108, 156, 255, 0.28),
+    rgba(180, 140, 255, 0.28)
+  );
+}
+
+/* Guide Panel */
+.guide-panel {
+  background: var(--brand-panel);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+}
+
+.guide-panel h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Guide section spacing */
+.guide-section {
+  margin-top: 20px;
+}
+
+/* Subject Pills */
+.guide-pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.guide-pill {
+  display: inline-block;
+  background: var(--brand-accent);
+  color: var(--brand-dark);
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin: 6px 8px 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Projects List */
+.guide-panel ul {
+  padding-left: 18px;
+  margin-top: 6px;
+}
+
+.guide-panel li {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Notes */
+.guide-notes {
+  margin-top: 14px;
+  color: var(--brand-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+/* ============================================================
+   SUBJECT NOTES PAGE STYLES (added inside guide.css)
+   ============================================================ */
+
+.notes-wrapper {
+  margin-top: 20px;
+  background: var(--brand-panel);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+}
+
+.notes-wrapper h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: var(--brand-primary);
+}
+
+/* Notes Cards */
+.notes-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  margin-top: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--brand-border);
+  transition: 0.2s ease;
+}
+
+.notes-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
+}
+
+.notes-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--brand-primary);
+}
+
+.notes-card p {
+  color: var(--brand-muted);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.notes-card ul {
+  margin-left: 18px;
+}
+
+.notes-card li {
+  font-size: 14px;
+  margin: 5px 0;
+  color: var(--brand-light);
+}
+
+
+/* Back Button Styled like Guide UI */
+
+
+/* Back Button Styled like Year Tabs */
+.guide-back-btn {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  background: rgba(108, 156, 255, 0.15);
+  color: var(--brand-light);
+  border: 1px solid var(--brand-border);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.guide-back-btn:hover {
+  background: rgba(108, 156, 255, 0.25);
+  transform: translateX(-3px);
+}
+
+
+.guide-back-btn {
+  margin-bottom: 15px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+  background: rgba(108, 156, 255, 0.15);
+  color: var(--brand-light);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.guide-back-btn:hover {
+  background: rgba(108, 156, 255, 0.28);
+  transform: translateX(-3px);
+}
+
+
+
+
+/* YEAR TILES */
+.year-tile {
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+  cursor: pointer;
+  transition: 0.2s ease;
+  background: rgba(108, 156, 255, 0.15);
+  margin-bottom: 10px;
+}
+
+.year-tile.active {
+  outline: 2px solid var(--brand-primary);
+  background: linear-gradient(
+    135deg,
+    rgba(108, 156, 255, 0.28),
+    rgba(180, 140, 255, 0.28)
+  );
+}
+
+/* GUIDE PANEL (BIG CARD) */
+.guide-panel {
+  background: var(--brand-panel);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+  margin-top: 20px;
+}
+
+.guide-panel h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+.guide-section {
+  margin-top: 22px;
+}
+
+/* HEADINGS */
+.guide-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* SUBJECT PILLS */
+.guide-pill {
+  display: inline-block;
+  background: var(--brand-accent);
+  color: var(--brand-dark);
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin: 6px 8px 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* LISTS */
+.guide-panel ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.guide-panel li {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* NOTES SECTION */
+.guide-notes {
+  margin-top: 14px;
+  color: var(--brand-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}

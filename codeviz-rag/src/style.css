@@ -1,0 +1,226 @@
+/* ============================
+   GLOBAL BASE STYLES
+=============================== */
+body {
+  background: #0b1220;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+
+.app-root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ============================
+   LAYOUT HELPERS
+=============================== */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.center {
+  align-items: center;
+}
+
+/* ============================
+   REMOVE DEFAULT LINK STYLE
+=============================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================
+   SOFT COLORED NAV TABS (SUBTLE)
+=============================== */
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 18px 0;
+}
+
+/* Base tab styling */
+.tabs .tab {
+  color: #e9ecf5;
+  padding: 18px 20px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Subtle individual tab colors */
+.tabs .tab:nth-child(1) { background: #263b5a; }  /* Soft navy blue */
+.tabs .tab:nth-child(2) { background: #2e2a4a; }  /* Soft violet */
+.tabs .tab:nth-child(3) { background: #1f3a32; }  /* Soft teal green */
+.tabs .tab:nth-child(4) { background: #4a3327; }  /* Soft brown copper */
+
+/* Hover effect (still subtle) */
+.tabs .tab:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* Active tab (slight brightness only) */
+.tabs .tab.active {
+  filter: brightness(1.18);
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* ============================
+   PANELS & CARDS
+=============================== */
+.panel,
+.guide-panel {
+  background: #141b2d;
+  border: 1px solid #24324d;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.panel-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.muted,
+.guide-notes {
+  color: #9fb0d3;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ============================
+   INPUTS & BUTTONS
+=============================== */
+.input,
+.textarea {
+  background: #0b1220;
+  border: 1px solid #24324d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.textarea {
+  min-height: 160px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+}
+
+.btn {
+  background: linear-gradient(135deg, #6c9cff, #b48cff);
+  color: #0b1220;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn.sm {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #24324d;
+}
+
+/* BACK BUTTON FOR SUBJECT NOTES */
+.guide-back-btn {
+  margin-bottom: 15px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: 1px solid #24324d;
+  background: rgba(108, 156, 255, 0.15);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.guide-back-btn:hover {
+  background: rgba(108, 156, 255, 0.25);
+  transform: translateX(-3px);
+}
+
+/* ============================
+   GRIDS
+=============================== */
+.grid-2,
+.grid-3,
+.grid-4 {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .tabs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================
+   COLORFUL TILES (Guide / Company)
+=============================== */
+.tile {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #24324d;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+}
+
+.t1 {
+  background: linear-gradient(135deg, rgba(108,156,255,.18), rgba(51,209,198,.18));
+}
+.t2 {
+  background: linear-gradient(135deg, rgba(57,217,138,.18), rgba(247,185,85,.18));
+}
+.t3 {
+  background: linear-gradient(135deg, rgba(255,122,198,.18), rgba(180,140,255,.18));
+}
+.t4 {
+  background: linear-gradient(135deg, rgba(255,112,112,.18), rgba(108,156,255,.18));
+}

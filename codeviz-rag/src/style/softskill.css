@@ -1,0 +1,88 @@
+.soft-title {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.soft-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #0b1220;
+  border: 1px solid #24324d;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.soft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.soft-card {
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(108, 156, 255, 0.18);
+  border: 1px solid #24324d;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-3px);
+}
+
+.soft-muted {
+  color: #9fb0d3;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* Sticky overlay */
+.soft-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.soft-note {
+  width: 480px;
+  background: #fff9c4;
+  color: #1a1a1a;
+  border: 1px solid #e6d87a;
+  border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.soft-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px dashed #d9c85f;
+}
+
+.pin {
+  width: 14px;
+  height: 14px;
+  background: #e74c3c;
+  border-radius: 50%;
+}
+
+.close {
+  background: #1f2937;
+  border: none;
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.soft-body {
+  padding: 14px;
+}

@@ -1,0 +1,42 @@
+
+
+# Linked List
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+ll = Node(1)
+ll.next = Node(2)
+ll.next.next = Node(3)
+
+# Stack
+stack_ds = []
+stack_ds.append(10)
+stack_ds.append(20)
+
+# Queue
+queue_ds = []
+queue_ds.append('A')
+queue_ds.append('B')
+queue_ds.pop(0)
+queue_ds.append('C')
+
+# Tree
+class TNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+tree = TNode(50)
+tree.left = TNode(25)
+tree.right = TNode(75)
+tree.left.right = TNode(30)
+
+# Variable access to create frames
+a = ll.value
+b = stack_ds[-1]
+c = queue_ds[0]
+d = tree.left.right.value
+

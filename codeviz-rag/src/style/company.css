@@ -1,0 +1,311 @@
+/* ============================================================
+   GLOBAL RESET / PAGE BACKGROUND
+============================================================ */
+body {
+  background: #0f1624;
+  color: white;
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+
+/* ============================================================
+   COMPANY LIST (HOME PAGE)
+============================================================ */
+
+.company-list-container {
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.company-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.company-card {
+  background: #162036;
+  padding: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #1f2940;
+}
+
+.company-card:hover {
+  background: #1d2947;
+  transform: translateY(-3px);
+}
+
+.company-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.company-count {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+
+/* ============================================================
+   QUESTION LIST
+============================================================ */
+
+.qa-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qa-row {
+  padding: 14px 20px;
+  border: 1px solid #2a3550;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.qa-row strong {
+  font-size: 16px;
+}
+
+.qa-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #3b4f70;
+}
+
+
+/* ============================================================
+   QUESTION DETAIL PAGE (LEETCODE STYLE)
+============================================================ */
+
+.qd-container {
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.qd-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qd-heading {
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+.qd-back {
+  background: transparent;
+  border: 1px solid #2a3550;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #9bb5ff;
+}
+
+.qd-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.qd-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #2a3550;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+
+.qd-toggle {
+  background: transparent;
+  border: none;
+  color: #9bb5ff;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.qd-exp p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+.example-box {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-top: 18px;
+}
+
+
+/* ============================================================
+   LANGUAGE TABS
+============================================================ */
+
+.qd-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.qd-tab {
+  padding: 6px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #2a3550;
+  border-radius: 8px;
+  color: #c8d2ff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qd-tab.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+
+/* ============================================================
+   CODE BLOCK (FULL OUTLINE FIXED)
+============================================================ */
+
+/* ----------- Code Block (Fix Border) ----------- */
+.code-container {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #313d55;      /* ★ FIXED VISIBLE BORDER */
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.codeblock {
+  white-space: pre-wrap;
+  overflow-x: auto;
+  font-family: "Consolas", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #dcdcdc;
+  background: transparent;
+}
+
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: #3b82f6;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.copy-btn:hover {
+  background: #2563eb;
+}
+
+
+/* ============================================================
+   NAVIGATION BUTTONS
+============================================================ */
+
+.qd-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.qd-nav-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #2a3550;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #9bb5ff;
+}
+
+.qd-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+
+/* ============================================================
+   PANEL (USED BY QUESTION LIST PAGE)
+============================================================ */
+
+.panel.company-detail {
+  background: #0f1624;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #222a3d;
+  margin-top: 20px;
+}
+
+.panel.company-detail h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #9bb5ff;
+}
+
+.q-title {
+  margin: 20px 0 10px;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+
+
+/* ============================================================
+   EXPLANATION & EXAMPLE BOXES
+============================================================ */
+
+.answer-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #313d55;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 20px;
+}
+
+.answer-box summary {
+  cursor: pointer;
+  font-size: 16px;
+  color: #9bb5ff;
+}
+
+.answer-box p {
+  margin-top: 12px;
+  line-height: 1.6;
+  color: #d1d5e0;
+}
+
+.example-box {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #313d55;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.example-box strong {
+  color: #9bb5ff;
+  margin-bottom: 8px;
+  display: block;
+}

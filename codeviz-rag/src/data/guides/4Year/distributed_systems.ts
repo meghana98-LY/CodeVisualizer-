@@ -1,0 +1,36 @@
+const distributed_systems = {
+  summary: `
+Distributed Systems teach how multiple machines work together as a single system. Students learn 
+concepts like distributed architectures, consensus algorithms, replication, fault tolerance, 
+synchronization, and microservices. The subject provides the foundation for cloud-scale systems, 
+real-time applications, and reliable backend services.
+  `,
+
+  examples: [
+    "Simulate leader election algorithm.",
+    "Design distributed file storage.",
+    "Implement replication strategies.",
+    "Use message queues for communication.",
+    "Create microservice that communicates over REST.",
+    "Simulate distributed clock synchronization.",
+    "Perform load balancing on multiple servers.",
+    "Design partitioning strategy.",
+    "Handle node failure and recovery.",
+    "Implement simple publish-subscribe model."
+  ],
+
+  points: [
+    "Distributed architectures",
+    "Replication and consistency",
+    "Fault tolerance",
+    "Consensus algorithms (RAFT, Paxos)",
+    "Clock synchronization",
+    "Distributed file systems",
+    "Message passing and RPC",
+    "Microservices communication",
+    "Scalability techniques",
+    "Load balancing and fault handling"
+  ]
+};
+
+export default distributed_systems;

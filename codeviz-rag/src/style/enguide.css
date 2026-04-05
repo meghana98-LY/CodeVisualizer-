@@ -1,0 +1,61 @@
+/* Enguide Branding Styles (enguide.css) */
+
+/* COLOR PALETTE */
+:root {
+  --brand-primary: #6c9cff;
+  --brand-secondary: #b48cff;
+  --brand-accent: #39d98a;
+  --brand-dark: #0b1220;
+  --brand-panel: #141b2d;
+  --brand-border: #24324d;
+  --brand-muted: #9fb0d3;
+}
+
+/* BRAND GRADIENTS */
+.brand-gradient {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+}
+
+.tile.t1 {
+  background: linear-gradient(135deg, rgba(108, 156, 255, 0.18), rgba(51, 209, 198, 0.18));
+}
+
+.tile.t2 {
+  background: linear-gradient(135deg, rgba(57, 217, 138, 0.18), rgba(247, 185, 85, 0.18));
+}
+
+.tile.t3 {
+  background: linear-gradient(135deg, rgba(255, 122, 198, 0.18), rgba(180, 140, 255, 0.18));
+}
+
+.tile.t4 {
+  background: linear-gradient(135deg, rgba(255, 112, 112, 0.18), rgba(108, 156, 255, 0.18));
+}
+
+/* BRAND COMPONENTS */
+.logo-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.brand-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--brand-accent);
+  color: var(--brand-dark);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.brand-border {
+  border: 1px solid var(--brand-border);
+}

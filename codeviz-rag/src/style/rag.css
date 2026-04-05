@@ -1,0 +1,108 @@
+/* ================================================
+   RAG Chatbot Styles (rag.css)
+   ================================================ */
+
+/* Docked Chat Container */
+.dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+.dock-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.dock-card {
+  background: rgba(20, 28, 50, 0.92);
+  border: 1px solid var(--brand-border);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+.dock-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.dock-body {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Chat Bubbles */
+.bubble {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+  white-space: pre-wrap;
+  font-size: 13px;
+}
+
+.bubble.user {
+  margin-left: auto;
+  background: rgba(108, 156, 255, 0.25);
+}
+
+.bubble.bot {
+  margin-right: auto;
+  background: rgba(180, 140, 255, 0.2);
+}
+
+/* Input Row */
+.dock-input {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--brand-border);
+}
+
+.dock-input .input {
+  flex: 1;
+}
+
+/* Retrieved Snippet Panel */
+.snippet-panel {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.snippet-item {
+  background: rgba(108, 156, 255, 0.12);
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.snippet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Optional Code Context Textarea */
+.rag-code-input {
+  background: #0b1220;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid var(--brand-border);
+  font-family: monospace;
+}
