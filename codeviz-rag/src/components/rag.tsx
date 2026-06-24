@@ -154,22 +154,51 @@ export default function RagChat() {
           }}
         >
           {messages.map((msg, i) => (
-            <div key={i} style={{ marginBottom: "20px" }}>
-              <strong
-                style={{
-                  color: msg.from === "user" ? "#4ea1ff" : "#67ff8a",
-                }}
-              >
-                {msg.from}:
-              </strong>
+  <div
+    key={i}
+    style={{
+      marginBottom: "20px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: msg.from === "user" ? "flex-end" : "flex-start",
+    }}
+  >
+    <div
+      style={{
+        maxWidth: "90%",
+        padding: "12px",
+        borderRadius: "12px",
+        background:
+          msg.from === "user" ? "#1d4ed8" : "#111723",
+        border: "1px solid #333",
+        color: "white",
+      }}
+    >
+      <strong
+        style={{
+          display: "block",
+          marginBottom: "8px",
+          color: msg.from === "user" ? "#fff" : "#67ff8a",
+        }}
+      >
+        {msg.from}
+      </strong>
 
-              {msg.isCode ? (
-                formatCodeBlock(msg.text)
-              ) : (
-                <div style={{ marginTop: 5, color: "#ddd" }}>{msg.text}</div>
-              )}
-            </div>
-          ))}
+      {msg.isCode ? (
+        formatCodeBlock(msg.text)
+      ) : (
+        <div
+          style={{
+            whiteSpace: "pre-wrap",
+            lineHeight: "1.7",
+          }}
+        >
+          {msg.text}
+        </div>
+      )}
+    </div>
+  </div>
+))}
         </div>
 
         {/* Input */}

@@ -3,3 +3,8 @@ uvicorn[standard]
 pillow
 python-multipart
 aiofiles
+
+faiss-cpu
+sentence-transformers
+numpy
+

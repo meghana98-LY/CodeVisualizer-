@@ -1,0 +1,28 @@
+{
+  "title": "Oop",
+  "summary": "Object-Oriented Programming (OOP) teaches modular programming using objects and classes. Students \nlearn encapsulation, inheritance, polymorphism, abstraction, constructors, destructors, \ninterfaces, and exception handling. OOP promotes code reusability, modularity, and scalability, \nand is widely used in Java, C++, and Python development.",
+  "points": [
+    "Classes and objects",
+    "Constructors and destructors",
+    "Encapsulation and data hiding",
+    "Inheritance types",
+    "Polymorphism",
+    "Abstraction",
+    "Interfaces",
+    "Exception handling",
+    "Static vs dynamic binding",
+    "OOP design principles"
+  ],
+  "examples": [
+    "Create class and object in Java.",
+    "Demonstrate constructor overloading in C++.",
+    "Implement inheritance in Python.",
+    "Use virtual functions in C++.",
+    "Override methods using polymorphism.",
+    "Implement interface in Java.",
+    "Use try-catch for exception handling.",
+    "Implement abstract class with derived class.",
+    "Show encapsulation using getters/setters.",
+    "Design simple student management class."
+  ]
+}

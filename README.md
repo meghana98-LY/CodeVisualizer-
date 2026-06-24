@@ -197,7 +197,7 @@ codeviz-rag/
 │   ├── rag.py
 │   ├── code_runner.py
 │   ├── static/
-│   └── requirements.txt
+│  
 │
 ├── visualizer/
 │   ├── core/

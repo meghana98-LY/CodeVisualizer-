@@ -1,0 +1,22 @@
+{
+  "title": "Math",
+  "summary": "Engineering Mathematics covers linear algebra, matrices, eigenvalues, differential equations, \nand vector calculus. These topics are essential for algorithm design, machine learning, \ncomputer graphics, signal processing, and scientific computing. The subject helps students \ndevelop strong logical and analytical reasoning required for solving technical problems \nin various engineering domains.",
+  "points": [
+    "Matrices and determinants",
+    "Eigenvalues and eigenvectors",
+    "Differential equations",
+    "Vector calculus",
+    "Partial derivatives",
+    "Matrix transformations",
+    "Systems of linear equations"
+  ],
+  "examples": [
+    "Solve a system of linear equations using matrices.",
+    "Find eigenvalues and eigenvectors of a matrix.",
+    "Compute partial derivatives of multivariable functions.",
+    "Solve first-order differential equations.",
+    "Calculate gradient, divergence, and curl.",
+    "Perform matrix multiplication.",
+    "Solve linear recurrence relations."
+  ]
+}

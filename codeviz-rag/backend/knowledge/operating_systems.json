@@ -1,0 +1,28 @@
+{
+  "title": "Operating Systems",
+  "summary": "Operating Systems introduce process management, scheduling, memory allocation, threads, \nsynchronization, file systems, and device management. Students learn how OS controls hardware, \nmanages tasks, and allocates resources efficiently. This subject is key for system programming, \ncybersecurity, compilers, and backend performance optimization.",
+  "points": [
+    "Process states and PCB",
+    "CPU scheduling",
+    "Threads and concurrency",
+    "Deadlock and prevention",
+    "Memory management",
+    "Paging and segmentation",
+    "File system structure",
+    "I/O device management",
+    "Synchronization mechanisms",
+    "Disk scheduling"
+  ],
+  "examples": [
+    "Simulate CPU scheduling algorithms (FCFS, SJF, RR).",
+    "Create and manage threads in C or Java.",
+    "Implement producer\u2013consumer problem.",
+    "Use semaphores for synchronization.",
+    "Demonstrate paging and segmentation.",
+    "Write shell script to manage processes.",
+    "Measure process execution time.",
+    "Simulate disk scheduling algorithms.",
+    "Create and delete files programmatically.",
+    "Monitor system resources using Linux commands."
+  ]
+}

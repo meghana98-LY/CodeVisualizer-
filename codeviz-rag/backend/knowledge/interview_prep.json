@@ -1,0 +1,28 @@
+{
+  "title": "Interview Prep",
+  "summary": "Interview Preparation guides students through technical and behavioral interview readiness. It \nincludes data structures, algorithms, system design, OOP, OS, DBMS, and coding patterns. Students \nlearn how to approach coding problems, analyze time complexity, structure system design answers, \nand prepare for HR discussions. The subject aims to make students confident for internships and \njob placements.",
+  "points": [
+    "Coding interview patterns",
+    "Time and space analysis",
+    "Behavioral interview skills",
+    "System design basics",
+    "DSA problem solving",
+    "OOP concepts for interviews",
+    "DBMS and SQL interview topics",
+    "OS and concurrency questions",
+    "Resume preparation",
+    "Mock interviews"
+  ],
+  "examples": [
+    "Solve array problems using two-pointer technique.",
+    "Practice linked list questions.",
+    "Solve dynamic programming problems.",
+    "Explain system design for a chat application.",
+    "Prepare behavioral interview answers.",
+    "Solve SQL queries commonly asked in interviews.",
+    "Design small projects for resume.",
+    "Practice OOP interview problems.",
+    "Prepare operating systems questions.",
+    "Write resume summary paragraph."
+  ]
+}

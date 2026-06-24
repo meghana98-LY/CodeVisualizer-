@@ -1,0 +1,24 @@
+{
+  "title": "Calculus",
+  "summary": "Calculus introduces the mathematical study of continuous change. Students learn limits, \nderivatives, integrals, continuity, differentiation rules, and applications of calculus \nin engineering and computer science. The subject forms the mathematical foundation for \nmachine learning, optimization, graphics, data science, and algorithm analysis. \nUnderstanding calculus improves analytical thinking and enhances problem-solving capabilities.",
+  "points": [
+    "Limits and continuity",
+    "Derivatives and differentiation rules",
+    "Applications of derivatives",
+    "Integrals \u2013 definite and indefinite",
+    "Area under the curve",
+    "Maxima and minima",
+    "Chain rule and product rule",
+    "Applications in engineering"
+  ],
+  "examples": [
+    "Find the limit of a function as x approaches a value.",
+    "Differentiate polynomials using power rule.",
+    "Compute derivative of trigonometric functions.",
+    "Find maxima and minima of a curve.",
+    "Evaluate definite and indefinite integrals.",
+    "Find area under a curve using integration.",
+    "Solve continuity problems.",
+    "Apply chain rule to composite functions."
+  ]
+}
