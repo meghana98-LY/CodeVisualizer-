@@ -3,13 +3,26 @@ import numpy as np
 
 from sentence_transformers import SentenceTransformer
 
-# Load embedding model
+# ----------------------------------
+# Load Embedding Model
+# ----------------------------------
+
+print("Loading embedding model...")
+
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Load FAISS index
+# ----------------------------------
+# Load FAISS Index
+# ----------------------------------
+
+print("Loading FAISS index...")
+
 index = faiss.read_index("faiss_index.bin")
 
-# Load chunks
+# ----------------------------------
+# Load Chunks
+# ----------------------------------
+
 with open("chunks.txt", "r", encoding="utf-8") as f:
     content = f.read()
 
@@ -19,15 +32,19 @@ chunks = [
     if c.strip()
 ]
 
+print(f"Loaded {len(chunks)} chunks")
 
-def search(question, top_k=1):
 
-    # Generate embedding for user question
+# ----------------------------------
+# Search Function
+# ----------------------------------
+
+def search(question, top_k=3):
+
     q_embedding = model.encode(
         [question]
     ).astype(np.float32)
 
-    # Search FAISS index
     distances, indices = index.search(
         q_embedding,
         top_k
@@ -43,3 +60,24 @@ def search(question, top_k=1):
         })
 
     return results
+
+
+# ----------------------------------
+# Get Best Topic
+# ----------------------------------
+
+def best_topic(question):
+
+    results = search(question, top_k=1)
+
+    if not results:
+        return None
+
+    chunk = results[0]["text"]
+
+    lines = chunk.split("\n")
+
+    if not lines:
+        return None
+
+    return lines[0].strip()

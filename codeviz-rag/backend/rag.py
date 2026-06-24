@@ -1,25 +1,41 @@
-from faiss_rag import search
+from faiss_rag import best_topic
+from knowledge import KNOWLEDGE
 
 
 def rag_answer(question: str):
 
-    results = search(question, top_k=1)
+    topic = best_topic(question)
 
-    if not results:
+    if not topic:
         return "No relevant information found."
 
-    best = results[0]
+    best = None
 
-    chunk = best["text"]
+    for item in KNOWLEDGE:
 
-    lines = chunk.split("\n")
+        if item["title"].lower() == topic.lower():
+            best = item
+            break
 
-    topic = lines[0]
+    if not best:
+        return "No relevant information found."
 
-    content = "\n".join(lines[1:])
+    points = "\n".join(
+        f"• {p}" for p in best.get("points", [])[:5]
+    )
 
-    return f"""📘 Topic: {topic}
+    example = (
+        best.get("examples", ["No example available"])[0]
+    )
 
-📖 Answer:
-{content}
+    return f"""📘 Topic: {best['title']}
+
+📖 Summary:
+{best['summary']}
+
+🔑 Key Points:
+{points}
+
+💡 Example:
+{example}
 """
