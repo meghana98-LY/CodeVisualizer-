@@ -1,814 +1,1296 @@
-Adavnced Db Advanced Database Systems expands on core DBMS concepts and introduces distributed databases,  NoSQL systems, query optimization, indexing strategies, transaction processing, concurrency  control, and large-scale data storage. Students learn how modern database engines work internally  and how to design high-performance, scalable, and fault-tolerant database architectures used in  enterprise applications and large web systems.
+Adavnced Db
+Advanced Database Systems expands on core DBMS concepts and introduces distributed databases, 
+NoSQL systems, query optimization, indexing strategies, transaction processing, concurrency 
+control, and large-scale data storage. Students learn how modern database engines work internally 
+and how to design high-performance, scalable, and fault-tolerant database architectures used in 
+enterprise applications and large web systems.
 ===CHUNK===
-Adavnced Db Query optimization and EXPLAIN plans
+Adavnced Db
+Query optimization and EXPLAIN plans
 ===CHUNK===
-Adavnced Db Indexing techniques
+Adavnced Db
+Indexing techniques
 ===CHUNK===
-Adavnced Db Distributed databases
+Adavnced Db
+Distributed databases
 ===CHUNK===
-Adavnced Db Replication and sharding
+Adavnced Db
+Replication and sharding
 ===CHUNK===
-Adavnced Db NoSQL systems (MongoDB, Cassandra)
+Adavnced Db
+NoSQL systems (MongoDB, Cassandra)
 ===CHUNK===
-Adavnced Db CAP theorem
+Adavnced Db
+CAP theorem
 ===CHUNK===
-Adavnced Db Transaction processing
+Adavnced Db
+Transaction processing
 ===CHUNK===
-Adavnced Db Isolation levels
+Adavnced Db
+Isolation levels
 ===CHUNK===
-Adavnced Db Concurrency control mechanisms
+Adavnced Db
+Concurrency control mechanisms
 ===CHUNK===
-Adavnced Db Big data storage systems
+Adavnced Db
+Big data storage systems
 ===CHUNK===
-Adavnced Db Design sharded database architecture.
+Adavnced Db
+Design sharded database architecture.
 ===CHUNK===
-Adavnced Db Implement MongoDB CRUD operations.
+Adavnced Db
+Implement MongoDB CRUD operations.
 ===CHUNK===
-Adavnced Db Write complex SQL queries using window functions.
+Adavnced Db
+Write complex SQL queries using window functions.
 ===CHUNK===
-Adavnced Db Use indexing to improve query performance.
+Adavnced Db
+Use indexing to improve query performance.
 ===CHUNK===
-Adavnced Db Implement ACID transactions with isolation levels.
+Adavnced Db
+Implement ACID transactions with isolation levels.
 ===CHUNK===
-Adavnced Db Configure replication in SQL or NoSQL databases.
+Adavnced Db
+Configure replication in SQL or NoSQL databases.
 ===CHUNK===
-Adavnced Db Optimize slow queries using EXPLAIN.
+Adavnced Db
+Optimize slow queries using EXPLAIN.
 ===CHUNK===
-Adavnced Db Design distributed ERD for microservices.
+Adavnced Db
+Design distributed ERD for microservices.
 ===CHUNK===
-Adavnced Db Create materialized views.
+Adavnced Db
+Create materialized views.
 ===CHUNK===
-Adavnced Db Integrate database caching using Redis.
+Adavnced Db
+Integrate database caching using Redis.
 ===CHUNK===
-Advanced Netwroks Advanced Networks extends core networking concepts into routing protocols, advanced switching,  network security, QoS, SDN, wireless networks, and virtualization. Students learn how large-scale  networks are designed, optimized, monitored, and secured. This subject is essential for  cloud computing, cybersecurity, DevOps, and enterprise network administration. Topics also  include MPLS, BGP, VPNs, tunneling, and secure communication models.
+Advanced Netwroks
+Advanced Networks extends core networking concepts into routing protocols, advanced switching, 
+network security, QoS, SDN, wireless networks, and virtualization. Students learn how large-scale 
+networks are designed, optimized, monitored, and secured. This subject is essential for 
+cloud computing, cybersecurity, DevOps, and enterprise network administration. Topics also 
+include MPLS, BGP, VPNs, tunneling, and secure communication models.
 ===CHUNK===
-Advanced Netwroks Dynamic routing protocols (OSPF, BGP, EIGRP)
+Advanced Netwroks
+Dynamic routing protocols (OSPF, BGP, EIGRP)
 ===CHUNK===
-Advanced Netwroks Advanced switching concepts
+Advanced Netwroks
+Advanced switching concepts
 ===CHUNK===
-Advanced Netwroks Firewall and ACL configuration
+Advanced Netwroks
+Firewall and ACL configuration
 ===CHUNK===
-Advanced Netwroks Virtual LANs (VLANs)
+Advanced Netwroks
+Virtual LANs (VLANs)
 ===CHUNK===
-Advanced Netwroks Network Address Translation
+Advanced Netwroks
+Network Address Translation
 ===CHUNK===
-Advanced Netwroks Virtual Private Networks (VPN)
+Advanced Netwroks
+Virtual Private Networks (VPN)
 ===CHUNK===
-Advanced Netwroks Wireless protocols and security
+Advanced Netwroks
+Wireless protocols and security
 ===CHUNK===
-Advanced Netwroks SDN and network virtualization
+Advanced Netwroks
+SDN and network virtualization
 ===CHUNK===
-Advanced Netwroks MPLS fundamentals
+Advanced Netwroks
+MPLS fundamentals
 ===CHUNK===
-Advanced Netwroks QoS for multimedia traffic
+Advanced Netwroks
+QoS for multimedia traffic
 ===CHUNK===
-Advanced Netwroks Configure OSPF routing in a simulated network.
+Advanced Netwroks
+Configure OSPF routing in a simulated network.
 ===CHUNK===
-Advanced Netwroks Implement VLANs and inter-VLAN routing.
+Advanced Netwroks
+Implement VLANs and inter-VLAN routing.
 ===CHUNK===
-Advanced Netwroks Establish a site-to-site VPN tunnel.
+Advanced Netwroks
+Establish a site-to-site VPN tunnel.
 ===CHUNK===
-Advanced Netwroks Analyze network traffic using Wireshark.
+Advanced Netwroks
+Analyze network traffic using Wireshark.
 ===CHUNK===
-Advanced Netwroks Configure BGP for external routing.
+Advanced Netwroks
+Configure BGP for external routing.
 ===CHUNK===
-Advanced Netwroks Set up port security on a switch.
+Advanced Netwroks
+Set up port security on a switch.
 ===CHUNK===
-Advanced Netwroks Simulate SDN topology using Mininet.
+Advanced Netwroks
+Simulate SDN topology using Mininet.
 ===CHUNK===
-Advanced Netwroks Configure firewall rules using iptables.
+Advanced Netwroks
+Configure firewall rules using iptables.
 ===CHUNK===
-Advanced Netwroks Implement NAT and PAT.
+Advanced Netwroks
+Implement NAT and PAT.
 ===CHUNK===
-Advanced Netwroks Analyze QoS parameters for video traffic.
+Advanced Netwroks
+Analyze QoS parameters for video traffic.
 ===CHUNK===
-Backend Services Backend Services focus on server-side programming, APIs, authentication, databases, microservices, and deployment. Students learn how backend systems handle data, user sessions, routing, and  business logic. The subject covers REST APIs, caching, load balancing, server architectures, and  secure communication. Backend skills are essential for full-stack development, cloud engineering,  and scalable system design.
+Backend Services
+Backend Services focus on server-side programming, APIs, authentication, databases, microservices,
+and deployment. Students learn how backend systems handle data, user sessions, routing, and 
+business logic. The subject covers REST APIs, caching, load balancing, server architectures, and 
+secure communication. Backend skills are essential for full-stack development, cloud engineering, 
+and scalable system design.
 ===CHUNK===
-Backend Services REST API architecture
+Backend Services
+REST API architecture
 ===CHUNK===
-Backend Services Middleware and routing
+Backend Services
+Middleware and routing
 ===CHUNK===
-Backend Services Authentication and authorization
+Backend Services
+Authentication and authorization
 ===CHUNK===
-Backend Services Session management
+Backend Services
+Session management
 ===CHUNK===
-Backend Services Database integration
+Backend Services
+Database integration
 ===CHUNK===
-Backend Services Microservices architecture
+Backend Services
+Microservices architecture
 ===CHUNK===
-Backend Services Caching strategies
+Backend Services
+Caching strategies
 ===CHUNK===
-Backend Services API documentation
+Backend Services
+API documentation
 ===CHUNK===
-Backend Services Load balancing and scaling
+Backend Services
+Load balancing and scaling
 ===CHUNK===
-Backend Services Error handling and logging
+Backend Services
+Error handling and logging
 ===CHUNK===
-Backend Services Create REST API endpoints for CRUD operations.
+Backend Services
+Create REST API endpoints for CRUD operations.
 ===CHUNK===
-Backend Services Implement JWT-based authentication.
+Backend Services
+Implement JWT-based authentication.
 ===CHUNK===
-Backend Services Store user data in a relational database.
+Backend Services
+Store user data in a relational database.
 ===CHUNK===
-Backend Services Build a microservice that processes orders.
+Backend Services
+Build a microservice that processes orders.
 ===CHUNK===
-Backend Services Implement caching using Redis.
+Backend Services
+Implement caching using Redis.
 ===CHUNK===
-Backend Services Deploy backend service on a cloud provider.
+Backend Services
+Deploy backend service on a cloud provider.
 ===CHUNK===
-Backend Services Use Postman to test API responses.
+Backend Services
+Use Postman to test API responses.
 ===CHUNK===
-Backend Services Log requests using middleware.
+Backend Services
+Log requests using middleware.
 ===CHUNK===
-Backend Services Upload files with backend API.
+Backend Services
+Upload files with backend API.
 ===CHUNK===
-Backend Services Integrate third-party payment API.
+Backend Services
+Integrate third-party payment API.
 ===CHUNK===
-Calculus Calculus introduces the mathematical study of continuous change. Students learn limits,  derivatives, integrals, continuity, differentiation rules, and applications of calculus  in engineering and computer science. The subject forms the mathematical foundation for  machine learning, optimization, graphics, data science, and algorithm analysis.  Understanding calculus improves analytical thinking and enhances problem-solving capabilities.
+Calculus
+Calculus introduces the mathematical study of continuous change. Students learn limits, 
+derivatives, integrals, continuity, differentiation rules, and applications of calculus 
+in engineering and computer science. The subject forms the mathematical foundation for 
+machine learning, optimization, graphics, data science, and algorithm analysis. 
+Understanding calculus improves analytical thinking and enhances problem-solving capabilities.
 ===CHUNK===
-Calculus Limits and continuity
+Calculus
+Limits and continuity
 ===CHUNK===
-Calculus Derivatives and differentiation rules
+Calculus
+Derivatives and differentiation rules
 ===CHUNK===
-Calculus Applications of derivatives
+Calculus
+Applications of derivatives
 ===CHUNK===
-Calculus Integrals – definite and indefinite
+Calculus
+Integrals – definite and indefinite
 ===CHUNK===
-Calculus Area under the curve
+Calculus
+Area under the curve
 ===CHUNK===
-Calculus Maxima and minima
+Calculus
+Maxima and minima
 ===CHUNK===
-Calculus Chain rule and product rule
+Calculus
+Chain rule and product rule
 ===CHUNK===
-Calculus Applications in engineering
+Calculus
+Applications in engineering
 ===CHUNK===
-Calculus Find the limit of a function as x approaches a value.
+Calculus
+Find the limit of a function as x approaches a value.
 ===CHUNK===
-Calculus Differentiate polynomials using power rule.
+Calculus
+Differentiate polynomials using power rule.
 ===CHUNK===
-Calculus Compute derivative of trigonometric functions.
+Calculus
+Compute derivative of trigonometric functions.
 ===CHUNK===
-Calculus Find maxima and minima of a curve.
+Calculus
+Find maxima and minima of a curve.
 ===CHUNK===
-Calculus Evaluate definite and indefinite integrals.
+Calculus
+Evaluate definite and indefinite integrals.
 ===CHUNK===
-Calculus Find area under a curve using integration.
+Calculus
+Find area under a curve using integration.
 ===CHUNK===
-Calculus Solve continuity problems.
+Calculus
+Solve continuity problems.
 ===CHUNK===
-Calculus Apply chain rule to composite functions.
+Calculus
+Apply chain rule to composite functions.
 ===CHUNK===
-Cloud Cloud Computing introduces on-demand access to computing resources such as storage, servers,  databases, networking, and AI services. Students learn cloud models (IaaS, PaaS, SaaS),  virtualization, containers, scalability, disaster recovery, and cloud security. This subject is  crucial for DevOps, backend engineering, and modern application deployment.
+Cloud
+Cloud Computing introduces on-demand access to computing resources such as storage, servers, 
+databases, networking, and AI services. Students learn cloud models (IaaS, PaaS, SaaS), 
+virtualization, containers, scalability, disaster recovery, and cloud security. This subject is 
+crucial for DevOps, backend engineering, and modern application deployment.
 ===CHUNK===
-Cloud Cloud service models
+Cloud
+Cloud service models
 ===CHUNK===
-Cloud Virtualization and hypervisors
+Cloud
+Virtualization and hypervisors
 ===CHUNK===
-Cloud Containers and orchestration
+Cloud
+Containers and orchestration
 ===CHUNK===
-Cloud Serverless computing
+Cloud
+Serverless computing
 ===CHUNK===
-Cloud Scalability and elasticity
+Cloud
+Scalability and elasticity
 ===CHUNK===
-Cloud Cloud database services
+Cloud
+Cloud database services
 ===CHUNK===
-Cloud Monitoring and logging
+Cloud
+Monitoring and logging
 ===CHUNK===
-Cloud IAM and cloud security
+Cloud
+IAM and cloud security
 ===CHUNK===
-Cloud Disaster recovery models
+Cloud
+Disaster recovery models
 ===CHUNK===
-Cloud Cost-optimized cloud usage
+Cloud
+Cost-optimized cloud usage
 ===CHUNK===
-Cloud Create a virtual machine in AWS, Azure, or GCP.
+Cloud
+Create a virtual machine in AWS, Azure, or GCP.
 ===CHUNK===
-Cloud Deploy a web app using cloud hosting.
+Cloud
+Deploy a web app using cloud hosting.
 ===CHUNK===
-Cloud Configure object storage bucket.
+Cloud
+Configure object storage bucket.
 ===CHUNK===
-Cloud Perform autoscaling of an application.
+Cloud
+Perform autoscaling of an application.
 ===CHUNK===
-Cloud Create serverless function using Lambda.
+Cloud
+Create serverless function using Lambda.
 ===CHUNK===
-Cloud Use IAM roles for access control.
+Cloud
+Use IAM roles for access control.
 ===CHUNK===
-Cloud Set up cloud monitoring and alerts.
+Cloud
+Set up cloud monitoring and alerts.
 ===CHUNK===
-Cloud Deploy container using Docker on cloud.
+Cloud
+Deploy container using Docker on cloud.
 ===CHUNK===
-Cloud Create database instance in cloud.
+Cloud
+Create database instance in cloud.
 ===CHUNK===
-Cloud Perform load testing for cloud app.
+Cloud
+Perform load testing for cloud app.
 ===CHUNK===
-Dbms Database Management Systems introduce concepts of storing, organizing, retrieving, and managing  data efficiently. Students learn relational models, ER diagrams, SQL queries, normalization,  transactions, concurrency control, indexing, and recovery techniques. DBMS forms the foundation  for backend development, data engineering, and enterprise applications. Understanding databases  helps students design robust and scalable systems used in real-world applications.
+Dbms
+Database Management Systems introduce concepts of storing, organizing, retrieving, and managing 
+data efficiently. Students learn relational models, ER diagrams, SQL queries, normalization, 
+transactions, concurrency control, indexing, and recovery techniques. DBMS forms the foundation 
+for backend development, data engineering, and enterprise applications. Understanding databases 
+helps students design robust and scalable systems used in real-world applications.
 ===CHUNK===
-Dbms Relational data model
+Dbms
+Relational data model
 ===CHUNK===
-Dbms Entity-relationship model
+Dbms
+Entity-relationship model
 ===CHUNK===
-Dbms SQL commands
+Dbms
+SQL commands
 ===CHUNK===
-Dbms Joins and subqueries
+Dbms
+Joins and subqueries
 ===CHUNK===
-Dbms Constraints and keys
+Dbms
+Constraints and keys
 ===CHUNK===
-Dbms Normalization rules
+Dbms
+Normalization rules
 ===CHUNK===
-Dbms Transactions and ACID
+Dbms
+Transactions and ACID
 ===CHUNK===
-Dbms Concurrency control
+Dbms
+Concurrency control
 ===CHUNK===
-Dbms Indexing and hashing
+Dbms
+Indexing and hashing
 ===CHUNK===
-Dbms Database recovery
+Dbms
+Database recovery
 ===CHUNK===
-Dbms Write SQL query to select students with marks above 80.
+Dbms
+Write SQL query to select students with marks above 80.
 ===CHUNK===
-Dbms Create table for employee records.
+Dbms
+Create table for employee records.
 ===CHUNK===
-Dbms Insert, update, delete operations in SQL.
+Dbms
+Insert, update, delete operations in SQL.
 ===CHUNK===
-Dbms Design ER diagram for library management.
+Dbms
+Design ER diagram for library management.
 ===CHUNK===
-Dbms Convert ER model to relational schema.
+Dbms
+Convert ER model to relational schema.
 ===CHUNK===
-Dbms Write join queries (inner, left, full).
+Dbms
+Write join queries (inner, left, full).
 ===CHUNK===
-Dbms Implement normalization up to BCNF.
+Dbms
+Implement normalization up to BCNF.
 ===CHUNK===
-Dbms Perform transaction with COMMIT and ROLLBACK.
+Dbms
+Perform transaction with COMMIT and ROLLBACK.
 ===CHUNK===
-Dbms Create index for faster search.
+Dbms
+Create index for faster search.
 ===CHUNK===
-Dbms Write aggregate queries using GROUP BY.
+Dbms
+Write aggregate queries using GROUP BY.
 ===CHUNK===
-Devops DevOps focuses on automating development, deployment, monitoring, and operations using tools like  Docker, Kubernetes, Jenkins, Git, CI/CD pipelines, and cloud infrastructure. Students learn how to  build reliable, scalable, and automated delivery systems. DevOps bridges development and operations,  reducing deployment time and increasing software quality through continuous integration and  continuous delivery practices.
+Devops
+DevOps focuses on automating development, deployment, monitoring, and operations using tools like 
+Docker, Kubernetes, Jenkins, Git, CI/CD pipelines, and cloud infrastructure. Students learn how to 
+build reliable, scalable, and automated delivery systems. DevOps bridges development and operations, 
+reducing deployment time and increasing software quality through continuous integration and 
+continuous delivery practices.
 ===CHUNK===
-Devops Continuous Integration (CI)
+Devops
+Continuous Integration (CI)
 ===CHUNK===
-Devops Continuous Delivery (CD)
+Devops
+Continuous Delivery (CD)
 ===CHUNK===
-Devops Version control workflows
+Devops
+Version control workflows
 ===CHUNK===
-Devops Containerization using Docker
+Devops
+Containerization using Docker
 ===CHUNK===
-Devops Kubernetes orchestration
+Devops
+Kubernetes orchestration
 ===CHUNK===
-Devops Infrastructure as Code
+Devops
+Infrastructure as Code
 ===CHUNK===
-Devops Monitoring and logging
+Devops
+Monitoring and logging
 ===CHUNK===
-Devops Automation and scripting
+Devops
+Automation and scripting
 ===CHUNK===
-Devops DevOps pipeline tools
+Devops
+DevOps pipeline tools
 ===CHUNK===
-Devops Deployment strategies
+Devops
+Deployment strategies
 ===CHUNK===
-Devops Build CI/CD pipeline using GitHub Actions or Jenkins.
+Devops
+Build CI/CD pipeline using GitHub Actions or Jenkins.
 ===CHUNK===
-Devops Containerize application using Docker.
+Devops
+Containerize application using Docker.
 ===CHUNK===
-Devops Deploy microservices using Kubernetes.
+Devops
+Deploy microservices using Kubernetes.
 ===CHUNK===
-Devops Monitor logs using ELK stack.
+Devops
+Monitor logs using ELK stack.
 ===CHUNK===
-Devops Automate deployment using shell scripts.
+Devops
+Automate deployment using shell scripts.
 ===CHUNK===
-Devops Manage environment variables securely.
+Devops
+Manage environment variables securely.
 ===CHUNK===
-Devops Create Dockerfile and build image.
+Devops
+Create Dockerfile and build image.
 ===CHUNK===
-Devops Test and roll back failed deployments.
+Devops
+Test and roll back failed deployments.
 ===CHUNK===
-Devops Set up load balanced service.
+Devops
+Set up load balanced service.
 ===CHUNK===
-Devops Create cloud infrastructure using IaC tools.
+Devops
+Create cloud infrastructure using IaC tools.
 ===CHUNK===
-Digital Logic Digital Logic introduces the principles of digital circuits used in computers and electronic  systems. Students learn number systems, logic gates, Boolean algebra, K-map simplification,  combinational circuits, and sequential circuits. The subject lays the foundation for  understanding how processors, memory units, and hardware systems operate at the  fundamental binary level.
+Digital Logic
+Digital Logic introduces the principles of digital circuits used in computers and electronic 
+systems. Students learn number systems, logic gates, Boolean algebra, K-map simplification, 
+combinational circuits, and sequential circuits. The subject lays the foundation for 
+understanding how processors, memory units, and hardware systems operate at the 
+fundamental binary level.
 ===CHUNK===
-Digital Logic Binary number system
+Digital Logic
+Binary number system
 ===CHUNK===
-Digital Logic Logic gates
+Digital Logic
+Logic gates
 ===CHUNK===
-Digital Logic Boolean algebra
+Digital Logic
+Boolean algebra
 ===CHUNK===
-Digital Logic K-map minimization
+Digital Logic
+K-map minimization
 ===CHUNK===
-Digital Logic Combinational circuits
+Digital Logic
+Combinational circuits
 ===CHUNK===
-Digital Logic Sequential circuits
+Digital Logic
+Sequential circuits
 ===CHUNK===
-Digital Logic Flip-flops and counters
+Digital Logic
+Flip-flops and counters
 ===CHUNK===
-Digital Logic Registers and memory basics
+Digital Logic
+Registers and memory basics
 ===CHUNK===
-Digital Logic Simplify Boolean expressions using algebra rules.
+Digital Logic
+Simplify Boolean expressions using algebra rules.
 ===CHUNK===
-Digital Logic Minimize functions using Karnaugh Maps.
+Digital Logic
+Minimize functions using Karnaugh Maps.
 ===CHUNK===
-Digital Logic Design a half-adder and full-adder.
+Digital Logic
+Design a half-adder and full-adder.
 ===CHUNK===
-Digital Logic Construct multiplexers and demultiplexers.
+Digital Logic
+Construct multiplexers and demultiplexers.
 ===CHUNK===
-Digital Logic Design encoder and decoder circuits.
+Digital Logic
+Design encoder and decoder circuits.
 ===CHUNK===
-Digital Logic Create flip-flops such as SR, JK, D, and T.
+Digital Logic
+Create flip-flops such as SR, JK, D, and T.
 ===CHUNK===
-Digital Logic Build counters and shift registers.
+Digital Logic
+Build counters and shift registers.
 ===CHUNK===
-Distributed Systems Distributed Systems teach how multiple machines work together as a single system. Students learn  concepts like distributed architectures, consensus algorithms, replication, fault tolerance,  synchronization, and microservices. The subject provides the foundation for cloud-scale systems,  real-time applications, and reliable backend services.
+Distributed Systems
+Distributed Systems teach how multiple machines work together as a single system. Students learn 
+concepts like distributed architectures, consensus algorithms, replication, fault tolerance, 
+synchronization, and microservices. The subject provides the foundation for cloud-scale systems, 
+real-time applications, and reliable backend services.
 ===CHUNK===
-Distributed Systems Distributed architectures
+Distributed Systems
+Distributed architectures
 ===CHUNK===
-Distributed Systems Replication and consistency
+Distributed Systems
+Replication and consistency
 ===CHUNK===
-Distributed Systems Fault tolerance
+Distributed Systems
+Fault tolerance
 ===CHUNK===
-Distributed Systems Consensus algorithms (RAFT, Paxos)
+Distributed Systems
+Consensus algorithms (RAFT, Paxos)
 ===CHUNK===
-Distributed Systems Clock synchronization
+Distributed Systems
+Clock synchronization
 ===CHUNK===
-Distributed Systems Distributed file systems
+Distributed Systems
+Distributed file systems
 ===CHUNK===
-Distributed Systems Message passing and RPC
+Distributed Systems
+Message passing and RPC
 ===CHUNK===
-Distributed Systems Microservices communication
+Distributed Systems
+Microservices communication
 ===CHUNK===
-Distributed Systems Scalability techniques
+Distributed Systems
+Scalability techniques
 ===CHUNK===
-Distributed Systems Load balancing and fault handling
+Distributed Systems
+Load balancing and fault handling
 ===CHUNK===
-Distributed Systems Simulate leader election algorithm.
+Distributed Systems
+Simulate leader election algorithm.
 ===CHUNK===
-Distributed Systems Design distributed file storage.
+Distributed Systems
+Design distributed file storage.
 ===CHUNK===
-Distributed Systems Implement replication strategies.
+Distributed Systems
+Implement replication strategies.
 ===CHUNK===
-Distributed Systems Use message queues for communication.
+Distributed Systems
+Use message queues for communication.
 ===CHUNK===
-Distributed Systems Create microservice that communicates over REST.
+Distributed Systems
+Create microservice that communicates over REST.
 ===CHUNK===
-Distributed Systems Simulate distributed clock synchronization.
+Distributed Systems
+Simulate distributed clock synchronization.
 ===CHUNK===
-Distributed Systems Perform load balancing on multiple servers.
+Distributed Systems
+Perform load balancing on multiple servers.
 ===CHUNK===
-Distributed Systems Design partitioning strategy.
+Distributed Systems
+Design partitioning strategy.
 ===CHUNK===
-Distributed Systems Handle node failure and recovery.
+Distributed Systems
+Handle node failure and recovery.
 ===CHUNK===
-Distributed Systems Implement simple publish-subscribe model.
+Distributed Systems
+Implement simple publish-subscribe model.
 ===CHUNK===
-Dsa Data Structures and Algorithms (DSA) teaches organized ways to store, manage, and process data efficiently. Students learn about arrays, linked lists, stacks, queues, trees, graphs, hashing,  sorting, searching, recursion, and algorithm complexity. Understanding DSA is crucial for writing  efficient programs and solving real-world computational problems. This subject strengthens logical  thinking, optimizes program performance, and forms the foundation for competitive programming,  machine learning, and system design.
+Dsa
+Data Structures and Algorithms (DSA) teaches organized ways to store, manage, and process data
+efficiently. Students learn about arrays, linked lists, stacks, queues, trees, graphs, hashing, 
+sorting, searching, recursion, and algorithm complexity. Understanding DSA is crucial for writing 
+efficient programs and solving real-world computational problems. This subject strengthens logical 
+thinking, optimizes program performance, and forms the foundation for competitive programming, 
+machine learning, and system design.
 ===CHUNK===
-Dsa Time and space complexity
+Dsa
+Time and space complexity
 ===CHUNK===
-Dsa Arrays and dynamic arrays
+Dsa
+Arrays and dynamic arrays
 ===CHUNK===
-Dsa Linked lists (SLL, DLL)
+Dsa
+Linked lists (SLL, DLL)
 ===CHUNK===
-Dsa Stacks and queues
+Dsa
+Stacks and queues
 ===CHUNK===
-Dsa Trees and binary search trees
+Dsa
+Trees and binary search trees
 ===CHUNK===
-Dsa Heaps and priority queues
+Dsa
+Heaps and priority queues
 ===CHUNK===
-Dsa Hash tables and collision resolution
+Dsa
+Hash tables and collision resolution
 ===CHUNK===
-Dsa Graphs and traversal algorithms
+Dsa
+Graphs and traversal algorithms
 ===CHUNK===
-Dsa Sorting and searching
+Dsa
+Sorting and searching
 ===CHUNK===
-Dsa Divide and conquer method
+Dsa
+Divide and conquer method
 ===CHUNK===
-Dsa Implement stack using array.
+Dsa
+Implement stack using array.
 ===CHUNK===
-Dsa Implement queue using linked list.
+Dsa
+Implement queue using linked list.
 ===CHUNK===
-Dsa Write binary search algorithm.
+Dsa
+Write binary search algorithm.
 ===CHUNK===
-Dsa Perform inorder, preorder, postorder tree traversal.
+Dsa
+Perform inorder, preorder, postorder tree traversal.
 ===CHUNK===
-Dsa Create a graph using adjacency list.
+Dsa
+Create a graph using adjacency list.
 ===CHUNK===
-Dsa Implement BFS and DFS.
+Dsa
+Implement BFS and DFS.
 ===CHUNK===
-Dsa Sort an array using quick sort.
+Dsa
+Sort an array using quick sort.
 ===CHUNK===
-Dsa Detect cycle in a graph.
+Dsa
+Detect cycle in a graph.
 ===CHUNK===
-Dsa Reverse a linked list.
+Dsa
+Reverse a linked list.
 ===CHUNK===
-Dsa Find shortest path using Dijkstra's algorithm.
+Dsa
+Find shortest path using Dijkstra's algorithm.
 ===CHUNK===
-Index 
+Index
+
 ===CHUNK===
-Interview Prep Interview Preparation guides students through technical and behavioral interview readiness. It  includes data structures, algorithms, system design, OOP, OS, DBMS, and coding patterns. Students  learn how to approach coding problems, analyze time complexity, structure system design answers,  and prepare for HR discussions. The subject aims to make students confident for internships and  job placements.
+Interview Prep
+Interview Preparation guides students through technical and behavioral interview readiness. It 
+includes data structures, algorithms, system design, OOP, OS, DBMS, and coding patterns. Students 
+learn how to approach coding problems, analyze time complexity, structure system design answers, 
+and prepare for HR discussions. The subject aims to make students confident for internships and 
+job placements.
 ===CHUNK===
-Interview Prep Coding interview patterns
+Interview Prep
+Coding interview patterns
 ===CHUNK===
-Interview Prep Time and space analysis
+Interview Prep
+Time and space analysis
 ===CHUNK===
-Interview Prep Behavioral interview skills
+Interview Prep
+Behavioral interview skills
 ===CHUNK===
-Interview Prep System design basics
+Interview Prep
+System design basics
 ===CHUNK===
-Interview Prep DSA problem solving
+Interview Prep
+DSA problem solving
 ===CHUNK===
-Interview Prep OOP concepts for interviews
+Interview Prep
+OOP concepts for interviews
 ===CHUNK===
-Interview Prep DBMS and SQL interview topics
+Interview Prep
+DBMS and SQL interview topics
 ===CHUNK===
-Interview Prep OS and concurrency questions
+Interview Prep
+OS and concurrency questions
 ===CHUNK===
-Interview Prep Resume preparation
+Interview Prep
+Resume preparation
 ===CHUNK===
-Interview Prep Mock interviews
+Interview Prep
+Mock interviews
 ===CHUNK===
-Interview Prep Solve array problems using two-pointer technique.
+Interview Prep
+Solve array problems using two-pointer technique.
 ===CHUNK===
-Interview Prep Practice linked list questions.
+Interview Prep
+Practice linked list questions.
 ===CHUNK===
-Interview Prep Solve dynamic programming problems.
+Interview Prep
+Solve dynamic programming problems.
 ===CHUNK===
-Interview Prep Explain system design for a chat application.
+Interview Prep
+Explain system design for a chat application.
 ===CHUNK===
-Interview Prep Prepare behavioral interview answers.
+Interview Prep
+Prepare behavioral interview answers.
 ===CHUNK===
-Interview Prep Solve SQL queries commonly asked in interviews.
+Interview Prep
+Solve SQL queries commonly asked in interviews.
 ===CHUNK===
-Interview Prep Design small projects for resume.
+Interview Prep
+Design small projects for resume.
 ===CHUNK===
-Interview Prep Practice OOP interview problems.
+Interview Prep
+Practice OOP interview problems.
 ===CHUNK===
-Interview Prep Prepare operating systems questions.
+Interview Prep
+Prepare operating systems questions.
 ===CHUNK===
-Interview Prep Write resume summary paragraph.
+Interview Prep
+Write resume summary paragraph.
 ===CHUNK===
-Linux Linux introduces students to open-source operating systems, shell commands, file systems,  permissions, process management, networking tools, and scripting. Students gain hands-on  experience working with terminal commands, editing files, managing users, and navigating  the Linux environment. This subject builds strong fundamentals required for devops,  cloud computing, cybersecurity, and backend engineering.
+Linux
+Linux introduces students to open-source operating systems, shell commands, file systems, 
+permissions, process management, networking tools, and scripting. Students gain hands-on 
+experience working with terminal commands, editing files, managing users, and navigating 
+the Linux environment. This subject builds strong fundamentals required for devops, 
+cloud computing, cybersecurity, and backend engineering.
 ===CHUNK===
-Linux Linux architecture
+Linux
+Linux architecture
 ===CHUNK===
-Linux File system hierarchy
+Linux
+File system hierarchy
 ===CHUNK===
-Linux Basic shell commands
+Linux
+Basic shell commands
 ===CHUNK===
-Linux Permissions and ownership
+Linux
+Permissions and ownership
 ===CHUNK===
-Linux Package management
+Linux
+Package management
 ===CHUNK===
-Linux Process control
+Linux
+Process control
 ===CHUNK===
-Linux Shell scripting fundamentals
+Linux
+Shell scripting fundamentals
 ===CHUNK===
-Linux Networking commands
+Linux
+Networking commands
 ===CHUNK===
-Linux Environment variables
+Linux
+Environment variables
 ===CHUNK===
-Linux Text processing tools
+Linux
+Text processing tools
 ===CHUNK===
-Linux Use ls, cd, pwd to navigate directories.
+Linux
+Use ls, cd, pwd to navigate directories.
 ===CHUNK===
-Linux Create and delete files using touch and rm.
+Linux
+Create and delete files using touch and rm.
 ===CHUNK===
-Linux Modify permissions using chmod.
+Linux
+Modify permissions using chmod.
 ===CHUNK===
-Linux Check running processes using ps and top.
+Linux
+Check running processes using ps and top.
 ===CHUNK===
-Linux Use grep to search text in files.
+Linux
+Use grep to search text in files.
 ===CHUNK===
-Linux Compress and extract files using tar.
+Linux
+Compress and extract files using tar.
 ===CHUNK===
-Linux Write a simple bash script.
+Linux
+Write a simple bash script.
 ===CHUNK===
-Linux Set environment variables.
+Linux
+Set environment variables.
 ===CHUNK===
-Linux Monitor network using ifconfig or ip.
+Linux
+Monitor network using ifconfig or ip.
 ===CHUNK===
-Linux Manage packages using apt or yum.
+Linux
+Manage packages using apt or yum.
 ===CHUNK===
-Math Engineering Mathematics covers linear algebra, matrices, eigenvalues, differential equations,  and vector calculus. These topics are essential for algorithm design, machine learning,  computer graphics, signal processing, and scientific computing. The subject helps students  develop strong logical and analytical reasoning required for solving technical problems  in various engineering domains.
+Math
+Engineering Mathematics covers linear algebra, matrices, eigenvalues, differential equations, 
+and vector calculus. These topics are essential for algorithm design, machine learning, 
+computer graphics, signal processing, and scientific computing. The subject helps students 
+develop strong logical and analytical reasoning required for solving technical problems 
+in various engineering domains.
 ===CHUNK===
-Math Matrices and determinants
+Math
+Matrices and determinants
 ===CHUNK===
-Math Eigenvalues and eigenvectors
+Math
+Eigenvalues and eigenvectors
 ===CHUNK===
-Math Differential equations
+Math
+Differential equations
 ===CHUNK===
-Math Vector calculus
+Math
+Vector calculus
 ===CHUNK===
-Math Partial derivatives
+Math
+Partial derivatives
 ===CHUNK===
-Math Matrix transformations
+Math
+Matrix transformations
 ===CHUNK===
-Math Systems of linear equations
+Math
+Systems of linear equations
 ===CHUNK===
-Math Solve a system of linear equations using matrices.
+Math
+Solve a system of linear equations using matrices.
 ===CHUNK===
-Math Find eigenvalues and eigenvectors of a matrix.
+Math
+Find eigenvalues and eigenvectors of a matrix.
 ===CHUNK===
-Math Compute partial derivatives of multivariable functions.
+Math
+Compute partial derivatives of multivariable functions.
 ===CHUNK===
-Math Solve first-order differential equations.
+Math
+Solve first-order differential equations.
 ===CHUNK===
-Math Calculate gradient, divergence, and curl.
+Math
+Calculate gradient, divergence, and curl.
 ===CHUNK===
-Math Perform matrix multiplication.
+Math
+Perform matrix multiplication.
 ===CHUNK===
-Math Solve linear recurrence relations.
+Math
+Solve linear recurrence relations.
 ===CHUNK===
-Ml Basics Machine Learning Basics introduces fundamental ML concepts, datasets, supervised and unsupervised  learning, model training, testing, evaluation metrics, and common algorithms. Students learn how  machines identify patterns using mathematical models, enabling applications in prediction,  classification, clustering, and recommendation systems.
+Ml Basics
+Machine Learning Basics introduces fundamental ML concepts, datasets, supervised and unsupervised 
+learning, model training, testing, evaluation metrics, and common algorithms. Students learn how 
+machines identify patterns using mathematical models, enabling applications in prediction, 
+classification, clustering, and recommendation systems.
 ===CHUNK===
-Ml Basics Supervised learning algorithms
+Ml Basics
+Supervised learning algorithms
 ===CHUNK===
-Ml Basics Unsupervised learning
+Ml Basics
+Unsupervised learning
 ===CHUNK===
-Ml Basics Regression and classification
+Ml Basics
+Regression and classification
 ===CHUNK===
-Ml Basics Training vs testing data
+Ml Basics
+Training vs testing data
 ===CHUNK===
-Ml Basics Feature engineering
+Ml Basics
+Feature engineering
 ===CHUNK===
-Ml Basics Overfitting and underfitting
+Ml Basics
+Overfitting and underfitting
 ===CHUNK===
-Ml Basics Evaluation metrics
+Ml Basics
+Evaluation metrics
 ===CHUNK===
-Ml Basics K-nearest neighbors (KNN)
+Ml Basics
+K-nearest neighbors (KNN)
 ===CHUNK===
-Ml Basics Decision trees
+Ml Basics
+Decision trees
 ===CHUNK===
-Ml Basics K-means clustering
+Ml Basics
+K-means clustering
 ===CHUNK===
-Ml Basics Train linear regression model for prediction.
+Ml Basics
+Train linear regression model for prediction.
 ===CHUNK===
-Ml Basics Build classifier using decision trees.
+Ml Basics
+Build classifier using decision trees.
 ===CHUNK===
-Ml Basics Perform clustering using k-means.
+Ml Basics
+Perform clustering using k-means.
 ===CHUNK===
-Ml Basics Split dataset into training and testing.
+Ml Basics
+Split dataset into training and testing.
 ===CHUNK===
-Ml Basics Normalize data using standard scaling.
+Ml Basics
+Normalize data using standard scaling.
 ===CHUNK===
-Ml Basics Plot data distribution using Python.
+Ml Basics
+Plot data distribution using Python.
 ===CHUNK===
-Ml Basics Compute accuracy and confusion matrix.
+Ml Basics
+Compute accuracy and confusion matrix.
 ===CHUNK===
-Ml Basics Implement simple perceptron model.
+Ml Basics
+Implement simple perceptron model.
 ===CHUNK===
-Ml Basics Train model using scikit-learn.
+Ml Basics
+Train model using scikit-learn.
 ===CHUNK===
-Ml Basics Create ML pipeline for preprocessing.
+Ml Basics
+Create ML pipeline for preprocessing.
 ===CHUNK===
-Networks Computer Networks explains how devices communicate across the internet. Students learn about OSI  and TCP/IP models, IP addressing, routing, switching, network protocols, DNS, DHCP, HTTP, and  network security. Understanding networks is essential for cloud computing, cybersecurity, and  backend development. The subject also covers error detection, data transmission, and performance  metrics.
+Networks
+Computer Networks explains how devices communicate across the internet. Students learn about OSI 
+and TCP/IP models, IP addressing, routing, switching, network protocols, DNS, DHCP, HTTP, and 
+network security. Understanding networks is essential for cloud computing, cybersecurity, and 
+backend development. The subject also covers error detection, data transmission, and performance 
+metrics.
 ===CHUNK===
-Networks OSI reference model
+Networks
+OSI reference model
 ===CHUNK===
-Networks TCP/IP architecture
+Networks
+TCP/IP architecture
 ===CHUNK===
-Networks IP addressing & subnetting
+Networks
+IP addressing & subnetting
 ===CHUNK===
-Networks Routing & switching
+Networks
+Routing & switching
 ===CHUNK===
-Networks Network protocols (DNS, DHCP, HTTP, FTP)
+Networks
+Network protocols (DNS, DHCP, HTTP, FTP)
 ===CHUNK===
-Networks TCP vs UDP
+Networks
+TCP vs UDP
 ===CHUNK===
-Networks Error detection techniques
+Networks
+Error detection techniques
 ===CHUNK===
-Networks Network security basics
+Networks
+Network security basics
 ===CHUNK===
-Networks LAN, MAN, WAN concepts
+Networks
+LAN, MAN, WAN concepts
 ===CHUNK===
-Networks Packet sniffing tools
+Networks
+Packet sniffing tools
 ===CHUNK===
-Networks Identify OSI layer for each operation.
+Networks
+Identify OSI layer for each operation.
 ===CHUNK===
-Networks Assign IP address manually to a device.
+Networks
+Assign IP address manually to a device.
 ===CHUNK===
-Networks Simulate routing using static routes.
+Networks
+Simulate routing using static routes.
 ===CHUNK===
-Networks Use Wireshark to capture packets.
+Networks
+Use Wireshark to capture packets.
 ===CHUNK===
-Networks Configure DNS and DHCP in Packet Tracer.
+Networks
+Configure DNS and DHCP in Packet Tracer.
 ===CHUNK===
-Networks Demonstrate TCP handshake.
+Networks
+Demonstrate TCP handshake.
 ===CHUNK===
-Networks Calculate subnet masks.
+Networks
+Calculate subnet masks.
 ===CHUNK===
-Networks Trace route using traceroute command.
+Networks
+Trace route using traceroute command.
 ===CHUNK===
-Networks Test connectivity using ping.
+Networks
+Test connectivity using ping.
 ===CHUNK===
-Networks Simulate switching using VLANs.
+Networks
+Simulate switching using VLANs.
 ===CHUNK===
-Oop Object-Oriented Programming (OOP) teaches modular programming using objects and classes. Students  learn encapsulation, inheritance, polymorphism, abstraction, constructors, destructors,  interfaces, and exception handling. OOP promotes code reusability, modularity, and scalability,  and is widely used in Java, C++, and Python development.
+Oop
+Object-Oriented Programming (OOP) teaches modular programming using objects and classes. Students 
+learn encapsulation, inheritance, polymorphism, abstraction, constructors, destructors, 
+interfaces, and exception handling. OOP promotes code reusability, modularity, and scalability, 
+and is widely used in Java, C++, and Python development.
 ===CHUNK===
-Oop Classes and objects
+Oop
+Classes and objects
 ===CHUNK===
-Oop Constructors and destructors
+Oop
+Constructors and destructors
 ===CHUNK===
-Oop Encapsulation and data hiding
+Oop
+Encapsulation and data hiding
 ===CHUNK===
-Oop Inheritance types
+Oop
+Inheritance types
 ===CHUNK===
-Oop Polymorphism
+Oop
+Polymorphism
 ===CHUNK===
-Oop Abstraction
+Oop
+Abstraction
 ===CHUNK===
-Oop Interfaces
+Oop
+Interfaces
 ===CHUNK===
-Oop Exception handling
+Oop
+Exception handling
 ===CHUNK===
-Oop Static vs dynamic binding
+Oop
+Static vs dynamic binding
 ===CHUNK===
-Oop OOP design principles
+Oop
+OOP design principles
 ===CHUNK===
-Oop Create class and object in Java.
+Oop
+Create class and object in Java.
 ===CHUNK===
-Oop Demonstrate constructor overloading in C++.
+Oop
+Demonstrate constructor overloading in C++.
 ===CHUNK===
-Oop Implement inheritance in Python.
+Oop
+Implement inheritance in Python.
 ===CHUNK===
-Oop Use virtual functions in C++.
+Oop
+Use virtual functions in C++.
 ===CHUNK===
-Oop Override methods using polymorphism.
+Oop
+Override methods using polymorphism.
 ===CHUNK===
-Oop Implement interface in Java.
+Oop
+Implement interface in Java.
 ===CHUNK===
-Oop Use try-catch for exception handling.
+Oop
+Use try-catch for exception handling.
 ===CHUNK===
-Oop Implement abstract class with derived class.
+Oop
+Implement abstract class with derived class.
 ===CHUNK===
-Oop Show encapsulation using getters/setters.
+Oop
+Show encapsulation using getters/setters.
 ===CHUNK===
-Oop Design simple student management class.
+Oop
+Design simple student management class.
 ===CHUNK===
-Operating Systems Operating Systems introduce process management, scheduling, memory allocation, threads,  synchronization, file systems, and device management. Students learn how OS controls hardware,  manages tasks, and allocates resources efficiently. This subject is key for system programming,  cybersecurity, compilers, and backend performance optimization.
+Operating Systems
+Operating Systems introduce process management, scheduling, memory allocation, threads, 
+synchronization, file systems, and device management. Students learn how OS controls hardware, 
+manages tasks, and allocates resources efficiently. This subject is key for system programming, 
+cybersecurity, compilers, and backend performance optimization.
 ===CHUNK===
-Operating Systems Process states and PCB
+Operating Systems
+Process states and PCB
 ===CHUNK===
-Operating Systems CPU scheduling
+Operating Systems
+CPU scheduling
 ===CHUNK===
-Operating Systems Threads and concurrency
+Operating Systems
+Threads and concurrency
 ===CHUNK===
-Operating Systems Deadlock and prevention
+Operating Systems
+Deadlock and prevention
 ===CHUNK===
-Operating Systems Memory management
+Operating Systems
+Memory management
 ===CHUNK===
-Operating Systems Paging and segmentation
+Operating Systems
+Paging and segmentation
 ===CHUNK===
-Operating Systems File system structure
+Operating Systems
+File system structure
 ===CHUNK===
-Operating Systems I/O device management
+Operating Systems
+I/O device management
 ===CHUNK===
-Operating Systems Synchronization mechanisms
+Operating Systems
+Synchronization mechanisms
 ===CHUNK===
-Operating Systems Disk scheduling
+Operating Systems
+Disk scheduling
 ===CHUNK===
-Operating Systems Simulate CPU scheduling algorithms (FCFS, SJF, RR).
+Operating Systems
+Simulate CPU scheduling algorithms (FCFS, SJF, RR).
 ===CHUNK===
-Operating Systems Create and manage threads in C or Java.
+Operating Systems
+Create and manage threads in C or Java.
 ===CHUNK===
-Operating Systems Implement producer–consumer problem.
+Operating Systems
+Implement producer–consumer problem.
 ===CHUNK===
-Operating Systems Use semaphores for synchronization.
+Operating Systems
+Use semaphores for synchronization.
 ===CHUNK===
-Operating Systems Demonstrate paging and segmentation.
+Operating Systems
+Demonstrate paging and segmentation.
 ===CHUNK===
-Operating Systems Write shell script to manage processes.
+Operating Systems
+Write shell script to manage processes.
 ===CHUNK===
-Operating Systems Measure process execution time.
+Operating Systems
+Measure process execution time.
 ===CHUNK===
-Operating Systems Simulate disk scheduling algorithms.
+Operating Systems
+Simulate disk scheduling algorithms.
 ===CHUNK===
-Operating Systems Create and delete files programmatically.
+Operating Systems
+Create and delete files programmatically.
 ===CHUNK===
-Operating Systems Monitor system resources using Linux commands.
+Operating Systems
+Monitor system resources using Linux commands.
 ===CHUNK===
-Programming Baiscs Programming Basics introduces the fundamental concepts required to write and understand programs.  Students learn variables, data types, operators, control structures, loops, functions, arrays,  and basic problem-solving techniques. The goal is to build logical thinking and the ability to  convert real-world problems into algorithms. The subject also includes introduction to debugging,  memory concepts, and syntax across common programming languages. By mastering these building  blocks, students can easily progress into advanced subjects like Data Structures, OOP, and DBMS.
+Programming Baiscs
+Programming Basics introduces the fundamental concepts required to write and understand programs. 
+Students learn variables, data types, operators, control structures, loops, functions, arrays, 
+and basic problem-solving techniques. The goal is to build logical thinking and the ability to 
+convert real-world problems into algorithms. The subject also includes introduction to debugging, 
+memory concepts, and syntax across common programming languages. By mastering these building 
+blocks, students can easily progress into advanced subjects like Data Structures, OOP, and DBMS.
 ===CHUNK===
-Programming Baiscs Understanding variables and data types
+Programming Baiscs
+Understanding variables and data types
 ===CHUNK===
-Programming Baiscs Use of operators
+Programming Baiscs
+Use of operators
 ===CHUNK===
-Programming Baiscs Conditional statements
+Programming Baiscs
+Conditional statements
 ===CHUNK===
-Programming Baiscs Looping structures
+Programming Baiscs
+Looping structures
 ===CHUNK===
-Programming Baiscs Functions and modular programming
+Programming Baiscs
+Functions and modular programming
 ===CHUNK===
-Programming Baiscs Arrays and strings
+Programming Baiscs
+Arrays and strings
 ===CHUNK===
-Programming Baiscs Debugging basics
+Programming Baiscs
+Debugging basics
 ===CHUNK===
-Programming Baiscs Algorithms and flowcharts
+Programming Baiscs
+Algorithms and flowcharts
 ===CHUNK===
-Programming Baiscs Recursion basics
+Programming Baiscs
+Recursion basics
 ===CHUNK===
-Programming Baiscs Input/output operations
+Programming Baiscs
+Input/output operations
 ===CHUNK===
-Programming Baiscs Write a program to add two numbers.
+Programming Baiscs
+Write a program to add two numbers.
 ===CHUNK===
-Programming Baiscs Check whether a number is positive or negative.
+Programming Baiscs
+Check whether a number is positive or negative.
 ===CHUNK===
-Programming Baiscs Print Fibonacci series using loops.
+Programming Baiscs
+Print Fibonacci series using loops.
 ===CHUNK===
-Programming Baiscs Find maximum of three numbers.
+Programming Baiscs
+Find maximum of three numbers.
 ===CHUNK===
-Programming Baiscs Reverse a string without built-in functions.
+Programming Baiscs
+Reverse a string without built-in functions.
 ===CHUNK===
-Programming Baiscs Write a simple calculator using switch-case.
+Programming Baiscs
+Write a simple calculator using switch-case.
 ===CHUNK===
-Programming Baiscs Count vowels and consonants in a sentence.
+Programming Baiscs
+Count vowels and consonants in a sentence.
 ===CHUNK===
-Programming Baiscs Find largest element in an array.
+Programming Baiscs
+Find largest element in an array.
 ===CHUNK===
-Programming Baiscs Check whether a string is palindrome.
+Programming Baiscs
+Check whether a string is palindrome.
 ===CHUNK===
-Programming Baiscs Generate multiplication table of a number.
+Programming Baiscs
+Generate multiplication table of a number.
 ===CHUNK===
-Security Cybersecurity introduces risks, threats, vulnerabilities, encryption, authentication, secure  communication, firewalls, and ethical hacking. Students learn how systems are attacked and how to  defend them. The subject covers network security, cryptography, malware analysis, and security  policies. It is essential for careers in cybersecurity, networking, and cloud computing.
+Security
+Cybersecurity introduces risks, threats, vulnerabilities, encryption, authentication, secure 
+communication, firewalls, and ethical hacking. Students learn how systems are attacked and how to 
+defend them. The subject covers network security, cryptography, malware analysis, and security 
+policies. It is essential for careers in cybersecurity, networking, and cloud computing.
 ===CHUNK===
-Security Cyber threats and vulnerabilities
+Security
+Cyber threats and vulnerabilities
 ===CHUNK===
-Security Cryptography basics
+Security
+Cryptography basics
 ===CHUNK===
-Security Hashing and encryption
+Security
+Hashing and encryption
 ===CHUNK===
-Security Firewalls and IDS
+Security
+Firewalls and IDS
 ===CHUNK===
-Security Authentication models
+Security
+Authentication models
 ===CHUNK===
-Security Attack types
+Security
+Attack types
 ===CHUNK===
-Security Secure software practices
+Security
+Secure software practices
 ===CHUNK===
-Security Risk assessment
+Security
+Risk assessment
 ===CHUNK===
-Security Network security tools
+Security
+Network security tools
 ===CHUNK===
-Security Security policies
+Security
+Security policies
 ===CHUNK===
-Security Encrypt message using Caesar cipher.
+Security
+Encrypt message using Caesar cipher.
 ===CHUNK===
-Security Demonstrate hashing using SHA algorithm.
+Security
+Demonstrate hashing using SHA algorithm.
 ===CHUNK===
-Security Analyze packet using Wireshark.
+Security
+Analyze packet using Wireshark.
 ===CHUNK===
-Security Configure simple firewall rules.
+Security
+Configure simple firewall rules.
 ===CHUNK===
-Security Perform password strength testing.
+Security
+Perform password strength testing.
 ===CHUNK===
-Security Simulate SQL injection attack in safe environment.
+Security
+Simulate SQL injection attack in safe environment.
 ===CHUNK===
-Security Use Nmap for port scanning.
+Security
+Use Nmap for port scanning.
 ===CHUNK===
-Security Test system vulnerabilities using scanning tools.
+Security
+Test system vulnerabilities using scanning tools.
 ===CHUNK===
-Security Implement role-based access control.
+Security
+Implement role-based access control.
 ===CHUNK===
-Security Secure API using tokens.
+Security
+Secure API using tokens.
 ===CHUNK===
-Web Basics Web Basics introduces front-end development using HTML, CSS, and JavaScript. Students learn how  web pages are structured, styled, and made interactive. The subject covers DOM manipulation,  responsive design, forms, HTTP basics, APIs, and deployment concepts. It serves as the foundation  for full-stack development and modern web technologies.
+Web Basics
+Web Basics introduces front-end development using HTML, CSS, and JavaScript. Students learn how 
+web pages are structured, styled, and made interactive. The subject covers DOM manipulation, 
+responsive design, forms, HTTP basics, APIs, and deployment concepts. It serves as the foundation 
+for full-stack development and modern web technologies.
 ===CHUNK===
-Web Basics HTML structure
+Web Basics
+HTML structure
 ===CHUNK===
-Web Basics CSS styling & layout
+Web Basics
+CSS styling & layout
 ===CHUNK===
-Web Basics Responsive design
+Web Basics
+Responsive design
 ===CHUNK===
-Web Basics JavaScript basics
+Web Basics
+JavaScript basics
 ===CHUNK===
-Web Basics DOM manipulation
+Web Basics
+DOM manipulation
 ===CHUNK===
-Web Basics Forms and validation
+Web Basics
+Forms and validation
 ===CHUNK===
-Web Basics HTTP basics
+Web Basics
+HTTP basics
 ===CHUNK===
-Web Basics APIs and JSON
+Web Basics
+APIs and JSON
 ===CHUNK===
-Web Basics Frontend tools
+Web Basics
+Frontend tools
 ===CHUNK===
-Web Basics Deployment basics
+Web Basics
+Deployment basics
 ===CHUNK===
-Web Basics Create a simple webpage using HTML.
+Web Basics
+Create a simple webpage using HTML.
 ===CHUNK===
-Web Basics Style elements using CSS classes.
+Web Basics
+Style elements using CSS classes.
 ===CHUNK===
-Web Basics Create responsive layout using Flexbox.
+Web Basics
+Create responsive layout using Flexbox.
 ===CHUNK===
-Web Basics Validate a form using JavaScript.
+Web Basics
+Validate a form using JavaScript.
 ===CHUNK===
-Web Basics Manipulate DOM elements dynamically.
+Web Basics
+Manipulate DOM elements dynamically.
 ===CHUNK===
-Web Basics Create navigation bar using CSS.
+Web Basics
+Create navigation bar using CSS.
 ===CHUNK===
-Web Basics Consume REST API using fetch().
+Web Basics
+Consume REST API using fetch().
 ===CHUNK===
-Web Basics Host static site on GitHub Pages.
+Web Basics
+Host static site on GitHub Pages.
 ===CHUNK===
-Web Basics Add event listeners to buttons.
+Web Basics
+Add event listeners to buttons.
 ===CHUNK===
-Web Basics Build a simple to-do list app.
+Web Basics
+Build a simple to-do list app.
 ===CHUNK===
-Year Index 
+Year Index
+
 ===CHUNK===
