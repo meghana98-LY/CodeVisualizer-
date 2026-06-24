@@ -1,193 +1,59 @@
 # CodeViz-RAG
 
-CodeViz-RAG is a full-stack educational platform that combines code execution visualization, engineering learning resources, interview preparation content, and a chat interface.
-
-The project helps students understand how programs execute internally by generating visual animations of data structures and program state changes during execution.
+CodeViz-RAG is an AI-powered learning platform for Computer Science and Engineering students. It combines Retrieval-Augmented Generation (RAG), FAISS-based semantic search, Neon PostgreSQL, and Code Visualization to provide interactive learning and interview preparation.
 
 ---
 
-# Features
+## Features
 
-## Code Execution Visualizer
+### 1. Engineering Learning Assistant
+- Search engineering subjects using natural language.
+- Semantic retrieval using FAISS.
+- Data stored in Neon PostgreSQL.
+- Topic summaries.
+- Key points extraction.
+- Examples and explanations.
 
-Visualizes Python code execution step-by-step using execution tracing.
+### 2. Code Visualization
+- Visualize code execution step-by-step.
+- Variable tracking.
+- Data structure visualization.
+- Frame generation.
+- Execution animation.
 
-### Supported Data Structures
+### 3. 4-Year Engineering Guide
+- Year-wise learning roadmap.
+- Subject summaries.
+- Important concepts.
+- Learning resources.
 
-* Stack
-* Queue
-* Linked List
-* Binary Tree
+### 4. Interview Preparation
+- Company-specific interview questions.
+- Coding questions.
+- Technical interview preparation.
+- Soft skills preparation.
 
-### Visualization Pipeline
+---
+
+## Architecture
 
 ```text
-Python Code
-     ↓
-Execution Tracer
-     ↓
-Snapshots
-     ↓
-Frame Renderer
-     ↓
-GIF Animation
-     ↓
-Frontend Viewer
-```
-
-### Technologies Used
-
-* Python
-* sys.settrace()
-* Pillow (PIL)
-* FastAPI
-
----
-
-## RAG Chat
-
-Provides a chat interface for asking programming and engineering-related questions.
-
-### Current Status
-
-* Chat API integrated
-* Backend connected
-* Placeholder RAG implementation
-
-### Planned Improvements
-
-* FAISS Vector Database
-* Semantic Search
-* Engineering Notes Retrieval
-* LLM Integration
-
----
-
-## 4-Year Engineering Guide
-
-Provides a structured roadmap for engineering students.
-
-### Includes
-
-* Year-wise study plan
-* Core subjects
-* Learning resources
-* Study notes
-* Mini projects
-
-### Years Covered
-
-* First Year
-* Second Year
-* Third Year
-* Fourth Year
-
----
-
-## Company Interview Preparation
-
-Contains company-wise interview preparation material.
-
-### Includes
-
-* Coding Questions
-* Interview Questions
-* Explanations
-* Complexity Analysis
-* Multiple Language Solutions
-
-### Supported Languages
-
-* Python
-* Java
-* C++
-* C
-
----
-
-## Soft Skills Preparation
-
-Helps students prepare for placement interviews.
-
-### Includes
-
-* HR Questions
-* Communication Skills
-* Behavioral Questions
-* Interview Preparation Tips
-
----
-
-# Screenshots
-
-## RAG Chat
-
-*Add screenshot here*
-
-## Code Visualizer
-
-*Add screenshot here*
-
-## 4-Year Guide
-
-*Add screenshot here*
-
-## Company Interview Preparation
-
-*Add screenshot here*
-
----
-
-# System Architecture
-
-```text
-CodeViz-RAG
-│
-├── Frontend (React + TypeScript + Vite)
-│
-├── Backend (FastAPI)
-│
-├── Visualizer Engine
-│   ├── Tracer
-│   ├── Stack Visualizer
-│   ├── Queue Visualizer
-│   ├── Linked List Visualizer
-│   ├── Tree Visualizer
-│   ├── Frame Renderer
-│   └── Animator
-│
-├── Guide Module
-│
-├── Company Module
-│
-└── Soft Skills Module
+React + TypeScript
+        |
+        ▼
+     FastAPI
+        |
+        ├── Neon PostgreSQL
+        │
+        └── FAISS Vector Search
+                |
+                ▼
+          Semantic Retrieval
 ```
 
 ---
 
-# Tech Stack
-
-## Frontend
-
-* React
-* TypeScript
-* Vite
-* React Router
-
-## Backend
-
-* FastAPI
-* Uvicorn
-
-## Visualization Engine
-
-* Python
-* Pillow
-* sys.settrace()
-
----
-
-# Project Structure
+## Project Structure
 
 ```text
 codeviz-rag/
@@ -195,54 +61,88 @@ codeviz-rag/
 ├── backend/
 │   ├── main.py
 │   ├── rag.py
+│   ├── faiss_rag.py
+│   ├── build_index.py
+│   ├── database.py
 │   ├── code_runner.py
-│   ├── static/
-│  
+│   ├── migrate_to_neon.py
+│   ├── faiss_index.bin
+│   ├── chunks.txt
+│   └── static/
+│
+├── src/
+│   ├── components/
+│   │   ├── company/
+│   │   ├── guide/
+│   │   ├── rag.tsx
+│   │   ├── visualizer.tsx
+│   │   └── softskill.tsx
+│   │
+│   ├── api.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── style/
 │
 ├── visualizer/
 │   ├── core/
 │   ├── render/
 │   ├── visualizers/
-│   └── run_visualizer.py
+│   └── test_programs/
 │
-├── src/
-│
-├── requirements.txt
-├── package.json
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
 
-# Installation
+## Technologies Used
 
-## Clone Repository
+### Frontend
+- React
+- TypeScript
+- CSS
+
+### Backend
+- FastAPI
+- Python
+
+### Database
+- Neon PostgreSQL
+
+### AI / RAG
+- FAISS
+- Sentence Transformers
+- all-MiniLM-L6-v2
+
+### Visualization
+- AST Processing
+- Execution Tracing
+- Frame Rendering
+
+---
+
+## Installation
+
+### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/codeviz-rag.git
+
 cd codeviz-rag
 ```
 
-## Create Virtual Environment
+---
 
-### Windows
+### Backend Setup
 
 ```bash
+cd backend
+
 python -m venv venv
+
 venv\Scripts\activate
 ```
 
-### Linux / Mac
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
----
-
-## Install Backend Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -250,38 +150,51 @@ pip install -r requirements.txt
 
 ---
 
-## Install Frontend Dependencies
+### Configure Database
 
-```bash
-npm install
+Create `.env`
+
+```env
+DATABASE_URL=postgresql://username:password@host/neondb?sslmode=require
 ```
 
 ---
 
-# Running the Project
-
-## Start Backend
-
-Open Terminal 1:
+### Migrate Data
 
 ```bash
-cd backend
-python -m uvicorn main:app --reload --port 8001
+python migrate_to_neon.py
+```
+
+---
+
+### Build FAISS Index
+
+```bash
+python build_index.py
+```
+
+---
+
+### Run Backend
+
+```bash
+uvicorn main:app --reload
 ```
 
 Backend URL:
 
 ```text
-http://127.0.0.1:8001
+http://127.0.0.1:8000
 ```
 
 ---
 
-## Start Frontend
-
-Open Terminal 2:
+### Frontend Setup
 
 ```bash
+npm install
+
 npm run dev
 ```
 
@@ -293,90 +206,72 @@ http://localhost:5173
 
 ---
 
-# Production Build
+## API Endpoints
 
-Build the frontend:
+### Chat API
 
-```bash
-npm run build
+```http
+POST /api/chat
 ```
 
-Preview production build:
+Request:
 
-```bash
-npm run preview
+```json
+{
+  "message": "database"
+}
+```
+
+Response:
+
+```json
+{
+  "answer": "DBMS explanation..."
+}
 ```
 
 ---
 
-# Example Visualization
+### Code Visualization API
 
-Example Input:
-
-```python
-stack = []
-
-stack.append(10)
-stack.append(20)
-stack.append(30)
+```http
+POST /api/run-code
 ```
 
-Output:
+Request:
 
-* Execution Trace
-* Program Snapshots
-* Rendered Frames
-* Animated GIF
+```json
+{
+  "source": "print('Hello World')"
+}
+```
 
----
+Response:
 
-# Future Enhancements
-
-## Real RAG Implementation
-
-* FAISS Integration
-* Embedding Generation
-* Semantic Search
-* Context Retrieval
-
-## Cloud Database
-
-* MongoDB Atlas
-* Guide Storage
-* Subject Storage
-* Company Question Storage
-
-## Deployment
-
-### Frontend
-
-* Vercel
-
-### Backend
-
-* Render
-* Railway
-
-### Database
-
-* MongoDB Atlas
+```json
+{
+  "frames": [
+    "/static/frames/animation.gif"
+  ]
+}
+```
 
 ---
 
-# Learning Outcomes
+## Future Enhancements
 
-This project demonstrates:
-
-* Execution Tracing
-* Data Structure Visualization
-* FastAPI Backend Development
-* React Frontend Development
-* Animation Generation
-* Full Stack Development
-* Retrieval-Augmented Generation Concepts
+- Authentication
+- Admin Dashboard
+- Auto FAISS Rebuild
+- Company Question Database
+- Soft Skills Database
+- Cloud Deployment
+- Multi-Language Support
 
 ---
 
-# Author
+## Author
 
-Developed as an educational platform to help engineering students understand programming concepts, prepare for interviews, and visualize code execution interactively.
+Computer Science Engineering Project
+
+CodeViz-RAG – AI Powered Engineering Learning Platform
