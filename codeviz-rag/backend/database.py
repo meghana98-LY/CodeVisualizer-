@@ -1,9 +1,17 @@
+import os
 import psycopg2
+from dotenv import load_dotenv
 
-DATABASE_URL = "postgresql://neondb_owner:npg_5mFBKkrRPsX0@ep-small-base-atc5uef5-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+# Load environment variables
+load_dotenv()
 
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL not found in .env file")
+
+# Create connection
 conn = psycopg2.connect(DATABASE_URL)
-
 cursor = conn.cursor()
 
 print("Connected to Neon successfully!")
