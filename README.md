@@ -135,7 +135,7 @@ cd codeviz-rag
 ### Backend Setup
 
 ```bash
-cd backend
+cd codeviz-rag/backend
 
 python -m venv venv
 
@@ -145,7 +145,7 @@ venv\Scripts\activate
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r ..\requirements.txt
 ```
 
 ---
@@ -179,13 +179,13 @@ python build_index.py
 ### Run Backend
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8001
 ```
 
 Backend URL:
 
 ```text
-http://127.0.0.1:8000
+http://127.0.0.1:8001
 ```
 
 ---

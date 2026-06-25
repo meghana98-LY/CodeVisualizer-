@@ -207,13 +207,13 @@ export default function RagChat() {
             placeholder="Ask something or paste Python code..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            rows={5}
+            rows={3}
             style={{
               flexGrow: 1,
-              padding: 12,
+              padding: 10,
               borderRadius: 10,
               border: "1px solid #333",
-              resize: "vertical",
+              resize: "horizontal",
               fontFamily: "monospace",
               fontSize: "14px",
               background: "#111723",
@@ -224,7 +224,7 @@ export default function RagChat() {
           <button
             onClick={sendMessage}
             style={{
-              padding: "12px 22px",
+              padding: "10px 20px",
               borderRadius: 10,
               cursor: "pointer",
               backgroundColor: "#2563eb",
@@ -246,7 +246,7 @@ export default function RagChat() {
           borderRadius: "12px",
           background: "#080c14",
           padding: "12px",
-          height: "550px",
+          height: "500px",
           overflow: "auto",
         }}
       >
