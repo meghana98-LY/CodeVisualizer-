@@ -1,5 +1,5 @@
-from faiss_rag import best_topic
-from database import get_connection
+from backend.faiss_rag import best_topic
+from backend.database import get_connection
 
 
 def rag_answer(question: str):

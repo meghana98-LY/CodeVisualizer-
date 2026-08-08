@@ -4,8 +4,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from rag import rag_answer
-from code_runner import run_and_capture
+from backend.rag import rag_answer
+from backend.code_runner import run_and_capture
 
 app = FastAPI()
 
