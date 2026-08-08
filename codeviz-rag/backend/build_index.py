@@ -1,7 +1,16 @@
+import os
+import sys
+
 import faiss
 import numpy as np
 
-from database import cursor
+if __package__ is None:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(current_dir)
+    if repo_root not in sys.path:
+        sys.path.insert(0, repo_root)
+
+from backend.database import cursor
 from sentence_transformers import SentenceTransformer
 
 # -----------------------------
