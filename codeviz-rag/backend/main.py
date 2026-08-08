@@ -28,15 +28,6 @@ backend_static.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(backend_static)), name="static")
 
 # -------------------------
-# Serve frontend build
-# -------------------------
-frontend_dist = Path(__file__).resolve().parent.parent / "dist"
-if frontend_dist.exists():
-    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
-else:
-    print("Warning: frontend dist not found. Build the frontend before starting the backend.")
-
-# -------------------------
 # Chat RAG API
 # -------------------------
 @app.post("/api/chat")
@@ -61,3 +52,12 @@ async def run_code(payload: dict):
     return {
         "frames": [gif_path]
     }
+
+# -------------------------
+# Serve frontend build
+# -------------------------
+frontend_dist = Path(__file__).resolve().parent.parent / "dist"
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
+else:
+    print("Warning: frontend dist not found. Build the frontend before starting the backend.")
