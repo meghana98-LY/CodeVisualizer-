@@ -18,8 +18,9 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy backend and built frontend
+# Copy backend, visualizer, and built frontend
 COPY backend ./backend
+COPY visualizer ./visualizer
 COPY --from=frontend-build /app/dist ./dist
 
 # Expose a port for Render
