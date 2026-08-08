@@ -1,74 +1,59 @@
-import faiss
 import numpy as np
+from pathlib import Path
 
-from sentence_transformers import SentenceTransformer
+_model = None
+_index = None
+_chunks = None
 
-# -----------------------------
-# Load Embedding Model
-# -----------------------------
 
-print("Loading embedding model...")
+def _load_resources():
+    global _model, _index, _chunks
 
-model = SentenceTransformer(
-    "all-MiniLM-L6-v2"
-)
+    if _model is not None and _index is not None and _chunks is not None:
+        return
 
-# -----------------------------
-# Load FAISS Index
-# -----------------------------
+    import faiss
+    from sentence_transformers import SentenceTransformer
 
-print("Loading FAISS index...")
+    print("Loading embedding model...")
+    _model = SentenceTransformer("all-MiniLM-L6-v2")
 
-index = faiss.read_index(
-    "faiss_index.bin"
-)
+    print("Loading FAISS index...")
+    index_path = Path(__file__).resolve().parent / "faiss_index.bin"
+    _index = faiss.read_index(str(index_path))
+    print("FAISS vectors:", _index.ntotal)
 
-print("FAISS vectors:", index.ntotal)
+    chunks_path = Path(__file__).resolve().parent / "chunks.txt"
+    with open(chunks_path, "r", encoding="utf-8") as f:
+        content = f.read()
 
-# -----------------------------
-# Load Chunks
-# -----------------------------
+    _chunks = [
+        c.strip()
+        for c in content.split("===CHUNK===")
+        if c.strip()
+    ]
 
-with open(
-    "chunks.txt",
-    "r",
-    encoding="utf-8"
-) as f:
-
-    content = f.read()
-
-chunks = [
-    c.strip()
-    for c in content.split("===CHUNK===")
-    if c.strip()
-]
-
-print(f"Loaded {len(chunks)} chunks")
+    print(f"Loaded {len(_chunks)} chunks")
 
 # -----------------------------
 # Search Function
 # -----------------------------
 
 def search(question, top_k=3):
+    _load_resources()
 
-    q_embedding = model.encode(
-        [question]
-    ).astype(np.float32)
+    q_embedding = _model.encode([question]).astype(np.float32)
 
-    distances, indices = index.search(
-        q_embedding,
-        top_k
-    )
+    distances, indices = _index.search(q_embedding, top_k)
 
     results = []
 
     for rank, idx in enumerate(indices[0]):
-
-        if idx < 0 or idx >= len(chunks):
+        if idx < 0 or idx >= len(_chunks):
             continue
 
         results.append({
-            "text": chunks[idx],
+            "text": _chunks[idx],
             "score": float(distances[0][rank])
         })
 
