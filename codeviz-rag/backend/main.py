@@ -3,9 +3,16 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import JSONResponse
 
-from backend.rag import rag_answer
-from backend.code_runner import run_and_capture
+import logging
+import traceback
+
+# Lazy imports for heavy modules (imported inside handlers to avoid slow startup)
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("backend")
 
 app = FastAPI()
 
@@ -28,30 +35,57 @@ backend_static.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(backend_static)), name="static")
 
 # -------------------------
+# Simple health endpoint for deploy checks
+# -------------------------
+
+
+@app.get("/api/health")
+async def health():
+    return {"status": "ok"}
+
+
+# -------------------------
 # Chat RAG API
 # -------------------------
+
+
 @app.post("/api/chat")
 async def chat(payload: dict):
-    question = payload.get("message", "")
-    answer = rag_answer(question)
-    return {"answer": answer}
+    try:
+        question = payload.get("message", "")
+        logger.info("/api/chat received question: %s", question)
+        # lazy import to avoid loading large ML models at startup
+        from backend.rag import rag_answer
+        answer = rag_answer(question)
+        return {"answer": answer}
+    except Exception as e:
+        logger.error("Error in /api/chat: %s", e)
+        traceback.print_exc()
+        return JSONResponse(status_code=500, content={"error": "internal server error"})
 
 # -------------------------
 # Code Visualizer API
 # -------------------------
 @app.post("/api/run-code")
 async def run_code(payload: dict):
-    source = payload["source"]
+    try:
+        source = payload["source"]
 
-    # Generate the animation GIF
-    run_and_capture(source)
+        logger.info("/api/run-code received source (len=%d)", len(source) if source else 0)
 
-    gif_path = "/static/frames/animation.gif"
+        # Generate the animation GIF
+        # lazy import so local health checks don't load visualizer code until needed
+        from backend.code_runner import run_and_capture
+        run_and_capture(source)
 
-    # Frontend expects a list called "frames"
-    return {
-        "frames": [gif_path]
-    }
+        gif_path = "/static/frames/animation.gif"
+
+        # Frontend expects a list called "frames"
+        return {"frames": [gif_path]}
+    except Exception as e:
+        logger.error("Error in /api/run-code: %s", e)
+        traceback.print_exc()
+        return JSONResponse(status_code=500, content={"error": "internal server error"})
 
 # -------------------------
 # Serve frontend build
