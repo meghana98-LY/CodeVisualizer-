@@ -179,13 +179,13 @@ python build_index.py
 ### Run Backend
 
 ```bash
-uvicorn main:app --reload --port 8001
+uvicorn main:app --reload --port 8000
 ```
 
 Backend URL:
 
 ```text
-http://127.0.0.1:8001
+http://127.0.0.1:8000
 ```
 
 ---
@@ -194,15 +194,54 @@ http://127.0.0.1:8001
 
 ```bash
 npm install
-
 npm run dev
 ```
+
+Front-end URL:
+
+```text
+http://localhost:5173
+```
+
+---
+
+### Run Frontend and Backend Together
+
+From the repository root (`codeviz-rag`):
+
+```bash
+npm install
+npm run dev:all
+```
+
+This uses `concurrently` to launch the Vite frontend and FastAPI backend in a single terminal.
 
 Frontend URL:
 
 ```text
 http://localhost:5173
 ```
+
+Backend URL:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## Deploy to Render
+
+A `render.yaml` file is included for a single Docker service deployment.
+
+Steps:
+
+1. Push the repo to GitHub.
+2. In Render, create a new service from `render.yaml`.
+3. Set `DATABASE_URL` in the service environment.
+4. Render will build the React frontend and backend together using the included `Dockerfile`.
+
+The backend will serve the built frontend from the same service.
 
 ---
 

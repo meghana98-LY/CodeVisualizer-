@@ -1,5 +1,5 @@
 from faiss_rag import best_topic
-from database import cursor
+from database import get_connection
 
 
 def rag_answer(question: str):
@@ -16,16 +16,17 @@ def rag_answer(question: str):
     # Load Subjects from Neon
     # -------------------------
 
-    cursor.execute("""
-    SELECT
-        title,
-        summary,
-        points,
-        examples
-    FROM subjects
-    """)
-
-    rows = cursor.fetchall()
+    with get_connection() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("""
+            SELECT
+                title,
+                summary,
+                points,
+                examples
+            FROM subjects
+            """)
+            rows = cursor.fetchall()
 
     KNOWLEDGE = []
 

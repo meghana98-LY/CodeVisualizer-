@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: codeviz-rag-single-service
+    env: docker
+    region: oregon
+    branch: main
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        scope: private

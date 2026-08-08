@@ -1,7 +1,8 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-import glob
 
 from rag import rag_answer
 from code_runner import run_and_capture
@@ -23,6 +24,15 @@ app.add_middleware(
 # Serve static frames
 # -------------------------
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# -------------------------
+# Serve frontend build
+# -------------------------
+frontend_dist = Path(__file__).resolve().parent.parent / "dist"
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
+else:
+    print("Warning: frontend dist not found. Build the frontend before starting the backend.")
 
 # -------------------------
 # Chat RAG API
