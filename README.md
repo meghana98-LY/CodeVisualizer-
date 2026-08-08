@@ -232,16 +232,23 @@ http://127.0.0.1:8000
 
 ## Deploy to Render
 
-A `render.yaml` file is included for a single Docker service deployment.
+This project includes `render.yaml` and `Dockerfile` so you can deploy both frontend and backend as one Render service.
 
 Steps:
 
-1. Push the repo to GitHub.
-2. In Render, create a new service from `render.yaml`.
-3. Set `DATABASE_URL` in the service environment.
-4. Render will build the React frontend and backend together using the included `Dockerfile`.
+1. Push your repository to GitHub.
+2. Open Render and click **New** → **Web Service**.
+3. Connect your GitHub account and select the repository.
+4. Select the branch you want to deploy (usually `main`).
+5. Render should detect `render.yaml` automatically.
+   - If it does not, choose **Use existing render.yaml** or set the service type to **Docker** and point to `Dockerfile`.
+6. Add the environment variable:
+   - `DATABASE_URL` = your database connection string
+7. Create the service.
 
-The backend will serve the built frontend from the same service.
+Render will build the frontend and backend together and serve the static app from the same backend host.
+
+Once deployed, your app should be available at the Render service URL. If you need to update the backend or frontend later, push changes to GitHub and Render will redeploy.
 
 ---
 
