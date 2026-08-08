@@ -1,0 +1,12 @@
+node_modules
+venv
+.git
+.gitignore
+Dockerfile
+render.yaml
+README.md
+*.md
+*.env
+__pycache__
+*.pyc
+dist

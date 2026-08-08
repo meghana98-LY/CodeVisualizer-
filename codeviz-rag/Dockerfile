@@ -3,6 +3,7 @@ FROM node:20-alpine AS frontend-build
 WORKDIR /app
 COPY package.json package-lock.json* ./
 COPY tsconfig.json .
+COPY tsconfig.node.json .
 COPY vite.config.* .
 COPY index.html .
 COPY src ./src
