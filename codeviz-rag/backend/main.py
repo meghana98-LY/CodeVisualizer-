@@ -24,6 +24,7 @@ app.add_middleware(
 # Serve static frames
 # -------------------------
 backend_static = Path(__file__).resolve().parent / "static"
+backend_static.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(backend_static)), name="static")
 
 # -------------------------
