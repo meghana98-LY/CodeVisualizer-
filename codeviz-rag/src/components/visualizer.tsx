@@ -65,7 +65,7 @@ export default function Visualizer({ frames }: { frames: string[] }) {
 
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  const BASE_URL = import.meta.env.VITE_API_URL || "";
 
   // Reset when new frames arrive
   useEffect(() => {
